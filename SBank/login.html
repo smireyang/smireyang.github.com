@@ -1,0 +1,168 @@
+<meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SBank</title>
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript">
+			var mobileKeyWords=new Array('iPhone','iPod','BlackBerry',
+			'Android','Windows CE','Windows CE;','LG','MOT','SAMSUNG',
+			'SonyEricsson','Mobile','symbian','Opera Mobi','Opera Mini','IEmobile');
+			for(var word in mobileKeyWords){
+				if(navigator.userAgent.match(mobileKeyWords[word]) !=null){
+					window.location.href="m/index.html";
+					break;
+				}
+			}
+		</script>
+</head>
+<body>
+    <div class="header">
+        <div class="headerInner">
+            <h1 class="bankingLogo"><a href="index.html">SBank</a></h1>
+            <p class="bankingLogin">로그인</p>
+            <!-- // 뱅킹 메뉴 -->
+            <ul class="bankingMenu">
+                <li><a href="#">개인</a> |</li>
+                <li><a href="#">기업</a> |</li>
+                <li><a href="#">금융상품</a> |</li>
+                <li><a href="#">카드</a> |</li>
+                <li><a href="#">사이트맵</a></li>
+            </ul>
+            <!-- // 뱅킹 메뉴 end -->
+        </div>
+        <div class="line"></div>
+    </div>
+    <section>
+    <div class="bankingConInner">
+     <div class="bankingTop">
+        <img src="img/organizing_project.svg" alt="bankingTopimg">
+        <div class="Topdc">
+        <p>· S은행은 보안강화 등을 이유로 보안카드번호(3개 이상 또는 전체)를 요구하지 않습니다.<br>· S은행 홈페이지는 인터넷 주소창이 녹색으로 표시되거나 보안 자물쇠가 있습니다.<br>
+        · 수사기관 등 공공기관은 어떤 명목으로도 통장 비밀번호 등 금융정보를 묻거나 범죄에 연루되었다는 등의 이유로 돈을 요구하지 않습니다.</p>
+        </div>
+    </div>
+      <div class="certForm">
+         <div class="certformInner">
+          <h3 class="certTitle">공인인증서 로그인</h3>
+          <input type="submit" value="공인인증서 로그인" class="certButton">
+          <div class="certCenter">
+              <div class="part1"><a href="#"><img src="img/padlock.png" alt="공인인증센터"><span>공인인증센터</span></a></div>
+              <div class="part2">
+                  <ul>
+                      <li><a href="#">인증서 발급/재발급</a> |</li>
+                      <li><a href="#">타행/타기관인증서등록</a></li>
+                  </ul>
+              </div>
+             </div>
+          </div>
+      </div>
+      <div class="loginForm">
+       <form class="login" id="loginForm">
+        <h3 class="loginTitle">이용자 ID 로그인</h3>
+        <input type="text" class="loginInput" placeholder="아이디" autofocus required>
+        <input type="password" class="loginInput" placeholder="사용자 암호" required>
+        <input type="submit" value="로그인" class="loginButton">
+        <span><a href="#">아이디 조회</a></span>  <span><a href="#">사용자암호변경/재등록</a></span>  <span><a href="#">회원가입</a></span>
+    </form>
+    </div>
+    <div class="bankingBot">
+        <p><span class="red">※</span>고객님의 소중한 정보는 정보보호 국내외 인증을 획득한 SBank의 정보보호 프로그램에 의해 안전하게 보호되고 있습니다.</p>
+        <p><i class="fas fa-exclamation-circle"></i> 인터넷뱅킹 종료 시, 안전한 금융거래를 위하여 반드시 [로그아웃] 버튼을 눌러 종료하시기 바랍니다.</p></div>
+        </div>
+    </section>
+    <footer>
+        <div class="footWrap">
+			<div class="foot_area">
+				<!-- 기본정보 -->
+				<ul class="nav-fnb">
+					<li><a href="#">이용상담</a></li>
+					<li><a href="#">보안프로그램</a></li>
+					<li><a href="#">사고신고</a></li>
+					<li><a href="#">보호금융상품등록부</a></li>
+					<li><a href="#"><strong>전자민원접수</strong></a></li>
+					<li><a href="#"><strong>개인정보처리방침</strong></a></li>
+					<li><a href="#"><strong>경영공시</strong></a></li>
+					<li><a href="#">그룹 내 고객정보 제공안내</a></li>
+				</ul>
+				<!-- 바로가기 및 고객센터 -->
+				<div class="info-group" id="navFooterGroup">
+					<ul class="list">
+						<!-- S금융그룹네트워크 -->
+						<li>
+							<a href="#" class="tit">S금융그룹네트워크</a>
+							<div class="info">
+								<ul>
+									<li><a href="#" target="_blank" title="새창 열기">S금융그룹</a></li>
+									<li><a href="#" target="_blank" title="새창 열기">S증권</a></li>
+									<li><a href="#" target="_blank" title="새창 열기">S카드</a></li>
+									<li><a href="#" target="_blank" title="새창 열기">S저축은행</a></li>
+									<li><a href="#" target="_blank" title="새창 열기">S신용정보</a></li>
+								</ul>
+							</div>
+						</li>
+						<!-- 대표전화 -->
+						<li class="ic1">
+							<a href="#" class="tit">대표전화 1588-0000</a>
+							<div class="info">
+								<dl>
+									<dt>대표전화</dt>
+									<dd>
+										<ul>
+											<li>1588-0000, 1599-0000, 1644-0000</li>
+											<li><span>해외에서 국내로 걸 때</span>+82-2-6300-0000</li>
+										</ul>
+									</dd>
+									<dt>상담전용</dt>
+									<dd>1800-0000<span>(분실 및 사고신고 제외)</span></dd>
+									<dt>기업전용</dt>
+									<dd>1599-0000</dd>
+									<!-- // -->
+								</dl>
+							</div>
+						</li>
+						<!-- 이메일상담 -->
+						<li class="ic2"><a href="#"><span class="tit">이메일상담</span></a></li>
+						<!-- 채팅상담 -->
+						<li class="ic3"><a href="#"><span class="tit">채팅상담(24시간 365일)</span></a></li>
+						<!-- 비교조회서비스 -->
+						<li>
+							<a href="#" class="tit">비교조회서비스</a>
+							<div class="info">
+								<ul>
+									<li><a href="#" target="_blank" title="새창 열기">은행금리비교</a></li>
+									<li><a href="#" target="_blank" title="새창 열기">금융상품 한눈에</a></li>
+									<li><a href="#" target="_blank" title="새창 열기">금융소비자정보포털 파인</a></li>
+								</ul>
+							</div>
+						</li>
+						<!-- ---------------------- -->
+					</ul>
+				</div>
+				<!-- SNS -->
+				<!--<div class="info-sns">
+					<ul>
+						<li class="ic1"><a href="#" target="_blank" title="S은행 페이스북 새창 열기">페이스북</a></li>
+						<li class="ic2"><a href="#" target="_blank" title="S은행 인스타그램 새창 열기">인스타그램</a></li>
+						<li class="ic3"><a href="#" target="_blank" title="S은행 YouTube 새창 열기">YouTube</a></li>
+						<li class="ic4"><a href="#" target="_blank" title="S은행 blog 새창 열기">blog</a></li>
+					</ul>
+				</div>-->
+				<!-- COPYRIGHT 및 마크 -->
+				<ul class="info-mark">
+				    <li class="ic1"><img src="img/ncsi.png" alt="NCSI"></li>
+					<li class="ic2"><a href="#" target="_blank" title="국가 공인 인증기관 웹와치 새창 열기"><img src="img/wa.png" alt="웹와치"></a></li>
+				</ul>
+				<p class="copy">Copyright S Bank. All Rights Reserved.</p>
+				<!-- ################################## -->
+			</div>
+        </div>
+    </footer>
+    <!-- // ### footer ### end -->
+</body>
+</html>

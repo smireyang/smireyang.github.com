@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-migrate-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <title>SBank</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <meta name="description" content="">
+    <meta name="author" content="USER">
+
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scle=1.0; user-scalable=no">
+    <!--모바일웹 할때 중요한 meta태그-->
+    <!--width=device-width: 각 모바일 기기의 해상도에 맞춰서 보일 수 있도록 설정
+			initial-scale:페이지가 보이는 기본 비율설정
+			maximum-scale:페이지가 보이는 최대 비율
+			minimim-scale:페이지가 보이는 최소 비율
+			user-scalable:모바일 기기에서 웹페이지 확대기능 여부지정
+		-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!--모바일 웹을 웹 앱 형태로 설정하는 메타태그-->
+    <script type="text/javascript">
+        window.addEventListener("load", function() {
+            setTimeout(scrollTo, 0, 0, 1);
+        }, false);
+
+    </script>
+    <!--주소창 가려서 화면비율 확보-->
+
+    <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+    <link rel="shortcut icon" href="../img/favicon.png">
+    <link rel="apple-touch-icon" href="../img/icon.jpg">
+    <!--애플전용-->
+    <link rel="apple-touch-icon-precomposed" href="../img/icon.jpg" />
+    <!--안드로이드&애플공통-->
+    <!--
+			파비콘:32*31, 64*64
+			아이콘:72*72, 114*114
+			-->
+    <link rel="apple-touch-startup-image" href="#">
+    <!--인트로화면 설정 (아이폰만 적용)-->
+    <link href="mobilemain.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <h1 class="logo"><a href="#">SBank</a></h1>
+        <div class="nav"><a href="#"><i class="fas fa-bars"></i></a></div>
+        <div class="page-nav">
+            <aside>
+                <div class="allMenuTop">
+                    <h3>SBank</h3>
+                    <div class="allMenuUtil">
+                        <a href="#" class="safe">보안센터</a>
+                        <a href="#" class="customer">고객센터</a>
+                        <a href="#" class="findBranch">영업점안내</a>
+                    </div>
+                </div>
+                <div class="nav"><i class="fas fa-times"></i></div>
+                <div class="allMenuArea">
+                    <ul class="allMenuList">
+                        <li class="acc on"><a href=".nav1" class="selected"><img src="../img/hand.svg" alt="EasyBanking"><br>간편뱅킹</a></li>
+                        <li class="prod"><a href=".nav2"><img src="../img/briefcase.svg" alt="financialProduct"><br>금융상품</a></li>
+                        <li class="life"><a href=".nav3"><img src="../img/growth.svg" alt="bankingservice"><br>금융서비스</a></li>
+                        <li class="cust"><a href=".nav4"><img src="../img/customer-support.svg" alt="customercenter"><br>고객센터</a></li>
+                        <li class="event"><a href="#" class="goLink"><img src="../img/gift.svg" alt="event"><br>이벤트</a></li>
+                    </ul>
+                    <div class="allMenuSub">
+                        <div class="allMenuCon nav1">
+                            <h2>간편뱅킹</h2>
+                            <div class="inSub">
+                                <a href="#">계좌조회</a>
+<!--                                <dl>
+                                    <dt id="step1"><a href="#">예금/신탁계좌조회</a></dt>
+                                    <dd>
+                                        <a href="#">펀드계좌조회</a>
+                                        <a href="#">대출계좌조회</a>
+                                        <a href="#">외환계좌조회</a>
+                                        <a href="#">보험계좌조회</a>
+                                        <a href="#">퇴직연금계좌조회</a>
+                                        <a href="#">골드계좌조회</a>
+                                    </dd>
+                                </dl>-->
+                                <a href="#">거래내역조회</a>
+                                <a href="#">자기앞수표 조회</a>
+                                <a href="#">환율조회</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="allMenuCon nav2" style="display:none">
+                        <h2>금융상품</h2>
+                        <div>
+                            <a href="#">인기상품</a>
+                            <a href="#">예금상품</a>
+                            <a href="#">펀드상품</a>
+                            <a href="#">대출상품</a>
+                            <a href="#">신탁상품</a>
+                            <a href="#">보험/공제</a>
+                        </div>
+                    </div>
+                    <div class="allMenuCon nav3" style="display:none">
+                        <h2>금융서비스</h2>
+                        <div>
+                            <a href="#">새소식</a>
+                            <a href="#">신상품</a>
+                            <a href="#">GOLDWISE</a>
+                            <a href="#" class="goLink">SB동영상뉴스</a>
+                            <a href="#">SB SNS</a>
+                        </div>
+                    </div>
+                    <div class="allMenuCon nav4" style="display:none">
+                        <h2>고객센터</h2>
+                        <div>
+                           <a href="#">고객상담센터 이용안내</a>
+                            <a href="#">이용시간 안내</a>
+                            <!--<div class="inSub">--><a href="#">사고신고</a>
+                                    <!--<a>통장/인감</a>
+                                    <a>현금/직불카드</a>
+                                    <a>보안카드/OTP</a>
+                            </div>-->
+                            <!--<div class="inSub">--><a href="#">사고신고 내역조회</a>
+                                <!--<ul>
+                                    <li><a>통장/인감/현금/직불</a></li>
+                                    <li><a>인터넷/폰/모바일뱅킹</a></li>
+                                </ul>
+                            </div>-->
+                            <a href="#">ARS 사고신고 안내</a>
+                            <a href="#">피싱방지 개인화 이미지</a>
+                            <a href="#">ID조회/사용자암호 재설정</a>
+                            <a href="#">고객자문단</a>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+        <!--<button><i class="fas fa-bars"></i><img src="btn_open/btn_open.png" alt=""></button>-->
+        </aside>
+        </div>
+
+    </header>
+    <section>
+        <div class="mb_ixVisual">
+            <p class="mb_prevbtn"><img src="../img/back.png" alt="back">
+                <!--<i class="fas fa-angle-left"></i>-->
+            </p>
+            <p class="mb_nextbtn"><img src="../img/next.png" alt="next">
+                <!--<i class="fas fa-angle-right"></i>-->
+            </p>
+            <div class="mb_sliderVisual">
+                <div class="mb_visualImg1">
+                    <a href="#" onclick="">
+                        <h2 class="mb_visualImg1_text"><span class="yellow">새로운 시작!</span><br>S스마트뱅킹 one up<br> <span class="red">2019.2.8 오픈</span></h2>
+                    </a><img src="../img/i_can_fly.svg" alt="visualImg1">
+                </div>
+                <div class="mb_visualImg2">
+                    <h2 class="mb_visualImg2_text"><span class="red">사랑하는 사람</span>에게<br>마음을 전하세요.<br>에스은행이 함께 합니다.</h2><img src="../img/super_thank_you.svg" alt="visualImg2">
+                </div>
+                <!-- <span class="visualImg4">풍성한 가을 당신의 모든 순간에 S뱅크가 함께합니다.</span> -->
+                <!-- <span class="visualImg5">깊어지는 겨울, 좋은 사람들과 함께 따뜻한 동화같은 하루</span> -->
+            </div>
+        </div>
+        <!-- //비주얼 image -->
+        <!-- tab menu-->
+        <div class="tabs">
+            <ul class="tab">
+                <li><a href="#Easy-banking" class="selected">간편뱅킹</a></li>
+                <li><a href="#financial-product">금융상품</a></li>
+                <li><a href="#exchange-rate-report">환율정보</a></li>
+                <li><a href="#news">새소식</a></li>
+            </ul>
+            <ul class="panel">
+                <li id="Easy-banking">
+                    <div class="Easy-banking">
+                        <a href="#"><i class="fas fa-search-dollar"></i>
+                            <!--<i class="fas fa-coins"></i>-->계좌조회</a>
+                        <a href="#"><i class="fas fa-dollar-sign"></i>즉시이체</a>
+                        <a href="#"><i class="fas fa-file-invoice-dollar"></i>거래내역</a>
+                        <a href="#"><img src="../img/bankbook.png" alt="bankbook">통장개설</a>
+                        <a href="#"><i class="fas fa-money-check-alt"></i>카드조회</a>
+                        <a href="#"><i class="far fa-credit-card"></i>
+                            <!--<i class="fas fa-money-check"></i>-->카드등록</a>
+                    </div>
+                </li>
+                <li id="financial-product">
+                    <div class="financial-product">
+                        <a href="#"><img src="../img/transfer.png" alt="">입출금</a>
+                        <a href="#"><i class="fas fa-hand-holding-usd"></i>예금</a>
+                        <a href="#"><i class="fas fa-piggy-bank"></i>적금/청약</a>
+                        <a href="#"><i class="fas fa-comment-dollar"></i>대출</a>
+                        <a href="#"><i class="fas fa-won-sign"></i>외환</a>
+                        <a href="#"><i class="fas fa-chart-line"></i>펀드</a>
+                    </div>
+                </li>
+                <li id="exchange-rate-report">
+                    <div class="exchange-rate-report">
+                        <div class="title">환율정보</div><span class="date">2019.02.15 17:56:50</span>
+                        <div class="usd"><img src="../img/united-states.png" alt="USD"> <span>USD</span> 1,143.16</div>
+                        <div class="jpy"><img src="../img/japan.png" alt="JPY"> <span>JPY</span> 1,041.12</div>
+                        <div class="eur"><img src="../img/european-union.png" alt="EUR"> <span>EUR</span> 1,298.24</div>
+                        <div class="cny"><img src="../img/china.png" alt="CNY"> <span>CNY</span> 175.63</div>
+                    </div>
+                </li>
+                <li id="news" class="news">
+                    <h3>새소식</h3>
+                    <div><a href="#">추가약정서(가계대출 기업대출 금리우대용) 개정 안내</a> <span class="date">2019.02.15</span></div>
+                    <div><a href="#"><span>휴면예금 서민금융진흥원 출연 안내</span></a> <span class="date">2019.02.10</span></div>
+                    <div><a href="#"><span>예금금리 변경 안내</span></a> <span class="date">2019.02.09</span></div>
+                    <div><a href="#"><span>S스마트뱅킹(one up!) 개편 안내</span></a> <span class="date">2019.02.08</span></div>
+                    <a class="btnMore" href="#">더보기</a>
+                </li>
+            </ul>
+        </div>
+        <!--tab menu End-->
+    </section>
+    <footer>
+        <ul class="footer_link">
+            <li><a href="#">인증센터</a> |</li>
+            <li><a href="#">고객센터</a> |</li>
+            <li><a href="#">영업점안내</a> |</li>
+            <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+        </ul>
+        <ul class="footer_link2">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">스마트뱅킹</a></li>
+            <li><a href="#">사이트맵</a></li>
+            <li><a href="#">TOP <i class="fas fa-angle-up"></i></a></li>
+        </ul>
+        <div class="footer_copy">
+            <p>Copyright S Bank. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

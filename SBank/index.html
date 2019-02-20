@@ -1,0 +1,358 @@
+<meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SBank</title>
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript">
+			var mobileKeyWords=new Array('iPhone','iPod','BlackBerry',
+			'Android','Windows CE','Windows CE;','LG','MOT','SAMSUNG',
+			'SonyEricsson','Mobile','symbian','Opera Mobi','Opera Mini','IEmobile');
+			for(var word in mobileKeyWords){
+				if(navigator.userAgent.match(mobileKeyWords[word]) !=null){
+					window.location.href="m/index.html";
+					break;
+				}
+			}
+		</script>
+</head>
+<body>
+    <header>
+        <div class="headerInner">
+            <h1 class="logo"><a href="#">SBank</a></h1>
+            <!-- 로그인 메뉴 -->
+            <ul class="loginMenu">
+                <li class="first"><a href="login.html" onclick="">로그인</a>
+                    <!--<div class="subM postion">
+                        <span class="menuBg"></span>
+                        <ul>
+                            <li class="per"><a href="#" onclick=""><span>개인뱅킹</span></a></li>
+                            <li class="biz"><a href="#" onclick=""><span>기업뱅킹</span></a></li>
+                        </ul>
+                    </div>-->
+                </li>
+                <li><a href="login.html" onclick="">공인인증센터</a></li>
+            </ul>
+            <!-- 로그인 메뉴 end -->
+
+            <!-- 메인 메뉴 -->
+            <h2 class="hidden_obj">메인메뉴</h2>
+            <ul class="mainMenu">
+                <li><a href="#">개인</a></li>
+                <li><a href="#">기업</a></li>
+                <li><a href="#">금융상품</a></li>
+                <li><a href="#">카드</a></li>
+                <li><a href="#">외환</a></li>
+                <li><a href="#">퇴직연금</a></li>
+                <li><a href="#">메뉴더보기</a></li>
+                <li><a href="#"><i class="fas fa-search"></i></a></li>
+            </ul>
+            <!-- // 메인 메뉴 end -->
+        </div>
+        <!-- 서브 메뉴 -->
+            <div class="subMenu">
+            <div class="subMninner">
+				<div class="subMn">
+					<ul class="sub sub1">
+						<li><a href="login.html">조회</a></li>
+						<li><a href="login.html">이체</a></li>
+						<li><a href="login.html">공과금</a></li>
+						<li><a href="login.html">예금</a></li>
+						<li><a href="login.html">펀드</a></li>
+						<li><a href="login.html">대출</a></li>
+					</ul>
+					<ul class="sub sub2">
+						<li><a href="login.html">조회</a></li>
+						<li><a href="login.html">이체</a></li>
+						<li><a href="login.html">대량이체</a></li>
+						<li><a href="login.html">예금</a></li>
+						<li><a href="login.html">대출</a></li>
+						<li><a href="login.html">수표/어음</a></li>
+					</ul>
+					<ul class="sub sub3">
+						<li><a href="login.html">개인상품</a></li>
+						<li><a href="login.html">기업상품</a></li>
+						<li><a href="login.html">상품가이드</a></li>
+					</ul>
+					<ul class="sub sub4">
+						<li><a href="login.html">카드안내</a></li>
+						<li><a href="login.html">카드금융</a></li>
+						<li><a href="login.html">카드관리</a></li>
+						<li><a href="login.html">개인서비스</a></li>
+						<li><a href="login.html">기업서비스</a></li>
+					</ul>
+					<ul class="sub sub5">
+						<li><a href="login.html">환율</a></li>
+						<li><a href="login.html">환전</a></li>
+						<li><a href="login.html">외화송금</a></li>
+						<li><a href="login.html">외화예금</a></li>
+						<li><a href="login.html">외화대출</a></li>
+					</ul>
+                </div>
+                </div>
+			</div>
+            <!-- // 서브 메뉴 end -->
+    </header>
+    <section>
+       <!-- 비주얼 image -->
+			<div class="ixVisual">
+                <p class="prevbtn"><img src="img/back.png" alt="이전"><!--<i class="fas fa-angle-left"></i>--></p>
+                <p class="nextbtn"><img src="img/next.png" alt="다"><!--<i class="fas fa-angle-right"></i>--></p>
+                <div class="sliderVisual">
+                    <div class="visualImg1">
+                        <a href="#" onclick=""><h2 class="visualImg1_text"><span class="yellow">새로운 시작!</span><br>S스마트뱅킹 one up<br> <span class="red">2019.2.8 오픈</span></h2></a><img src="img/i_can_fly.svg" alt="visualImg1">
+                    </div>
+                    <div class="visualImg2">
+                        <h2 class="visualImg2_text"><span class="red">사랑하는 사람</span>에게<br>마음을 전하세요.<br>에스은행이 함께 합니다.</h2><img src="img/super_thank_you.svg" alt="visualImg2">
+                    </div>
+                <!-- <span class="visualImg4">풍성한 가을 당신의 모든 순간에 S뱅크가 함께합니다.</span> -->
+                <!-- <span class="visualImg5">깊어지는 겨울, 좋은 사람들과 함께 따뜻한 동화같은 하루</span> -->
+				</div>
+			</div>
+			<!-- //비주얼 image -->
+		
+		<!-- // 상단(메뉴 + 배너) 영역 영역 end -->
+
+		<!-- ### contents 영역 ### -->
+		<div class="contents" id="content_wrap">
+			<!-- 금융&퀵 서비스 메뉴 -->
+			<div class="topCont">
+				<div class="topContInner">
+					<ul class="quick01">
+						<li class="m07"><a href="login.html" onclick=""><i class="fas fa-user"></i><br>My뱅크</a></li>
+						<li class="m01"><a href="login.html" onclick=""><i class="fas fa-search-dollar"></i><br>조회</a></li>
+						<li class="m02"><a href="login.html" onclick=""><i class="fas fa-dollar-sign"></i><br>이체</a></li>
+						<li class="m03"><a href="login.html" onclick=""><i class="fas fa-file-invoice-dollar"></i><br>공과금</a></li>
+						<li class="m04 bankMenu"><a href="login.html"><i class="fas fa-hand-holding-usd"></i><br>예금</a>
+						</li>
+						<li class="m05 bankMenu"><a href="login.html" onclick=""><i class="fas fa-chart-line"></i><br>펀드</a>
+						</li>
+						<li class="m06 bankMenu"><a href="login.html"><i class="fas fa-comment-dollar"></i><br>대출</a>
+						
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- //금융&퀵 서비스 메뉴 -->
+
+			<!-- 추천상품&이벤트 -->
+			<div class="midCont">
+				<div class="ixGoods-event">
+					<div class="area">
+					    <p class="mc_prevbtn"><i class="fas fa-angle-left"></i></p>
+                        <p class="mc_nextbtn"><i class="fas fa-angle-right"></i></p>
+						<p class="title">EVENT <span class="title_dc">S은행과 함께하는 신나는 이벤트</span></p>
+						<div class="areaEvent">
+							<ul class="sliderEvent" class="slick_slider">
+								<a href="#" onclick=""><li class="eventImg1">
+                                    <div class="eventImg_dc">
+                                        <h4>S올원적금 가입고객<br>
+                                        현금증정 이벤트</h4><br>
+                                        <h5>2019년 목표달성 프로젝트 제1탄</h5><br>
+                                        <p class="red">기간 : 2019년 01월 21일(월) ~ 2019년 02월 15일(금)</p>
+                                    </div>
+                                    <img src="img/gift_card.svg" alt="eventImg1"></li></a>
+                                <a href="#" onclick=""><li class="eventImg2">
+                                    <div class="eventImg_dc">
+                                        <h4>보이스피싱 예방서비스 출시</h4><br>
+                                        <h5>바이러스에는 백신, 보이스피싱은 스마트피싱보호!</h5><br>
+                                        <p class="red">스마트피싱보호 신청하고, 보이스피싱 예방하세요</p>
+                                    </div>
+                                    <img src="img/security.svg" alt="eventImg2"></li></a>
+                                <a href="#" onclick=""><li class="eventImg3">
+                                    <div class="eventImg_dc">
+                                        <h4>아동수당 수령계좌<br>대고객 이벤트</h4><br>
+                                        <h5>S은행에서 아동수당 계좌 만들고 황금돼지 받으세요</h5><br>
+                                        <p class="red">기간 2019년 01월25일(금) ~ 04월 25일(목)</p>
+                                    </div>
+                                    <img src="img/fatherhood.svg" alt="eventImg3"></li></a>
+                                    
+                                <a href="#" onclick=""><li class="eventImg4">
+                                    <div class="eventImg_dc eventImg_dc4">
+                                        <h4>HAPPY WINTER<br> 환전송금 페스티벌</h4><br>
+                                        <h5>올 겨울도 에스은행과 따뜻한 휴가!</h5><br>
+                                        <p class="red">기간 2019년 12월 17일(월)~02월28일(목)</p>
+                                    </div>
+                                    <img src="img/vault.svg" alt="eventImg4"></li></a>
+								<!--<li class="eventImg5"><a href="#" onclick="">공연에 빠지다 : 매월 새로운 특별한 혜택 무료공연/무료도서</a></li>-->
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="ixGoods-md">
+					<div class="area">
+                       <p class="md_prevbtn"><i class="fas fa-angle-left"></i></p>
+                        <p class="md_nextbtn"><i class="fas fa-angle-right"></i></p>
+                        <p class="title">S추천상품 <span class="title_dc">소중한 고객님을 위한 상품소개</span></p>
+						<div class="promBan" id="promBan"><!-- 롤링 코드 영역 id="promBan"-->
+						    <div class="areaMd">
+							<ul class="sliderRecomm">
+								<li>
+									<a class="recommImg1" href="#">
+									<div class="recommImg_dc">
+                                        <p class="blue">인기</p><br>
+                                        <h4>S직장인 월복리적금</h4><br>
+                                        <h5 class="gray">직장인 재테크 상품</h5><br>
+                                        <p>급여이체 및 교차거래 실적에 따라<br>우대금리를 제공하는<br>직장인재테크 월복리 적금상품</p>
+									</div>
+                                        <img src="img/wallet.svg" alt="recommImg1"></a>		
+								</li>
+								<li>
+									<a class="recommImg2" href="#">
+									<div class="recommImg_dc">
+                                        <p class="blue"></p><br>
+                                        <h4>도담도담통장</h4><br>
+                                        <h5 class="gray">최고의 우대혜택</h5><br>
+                                        <p>출산장려정책에 참여하는 고객을 위한 우대상품</p>
+									</div>
+                                        <img src="img/credit_card.svg" alt="recommImg2"></a>
+                                </li>
+                                <li>
+									<a class="recommImg3" href="#">
+									<div class="recommImg_dc">
+                                        <p class="blue">인기</p><br>
+                                        <h4>S직장인 대출</h4><br>
+                                        <h5 class="gray">언제 어디서나 간편하게</h5><br>
+                                        <p>은행 방문 없이 인터넷이나 모바일로 이용 가능한<br>
+                                        직장인 전용 신용대출 상품</p>
+									</div>
+									<img src="img/discount.svg" alt="recommImg3"></a>			
+								</li>
+                                
+								<!--<li>
+									<a class="recommImg4" href="#">행복이음 거치식예금 - 상생금융상품 / 도시와 농촌이 상생 할 수 있도록 맺고 이어주는 금융상품</a>
+								</li>-->
+							</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //추천상품&이벤트 -->
+           <!-- 공지&보안 -->
+        <div class="botCont">
+            <div class="midCont01 listCont">
+                <h3>새소식</h3>
+                <ul>
+                    <li><a href="#" onclick="">추가약정서(가계대출 기업대출 금리우대용) 개정 안내</a> <span class="date">2019.02.15</span></li>
+                    <li><a href="#" onclick=""><span>휴면예금 서민금융진흥원 출연 안내</span></a> <span class="date">2019.02.10</span></li>
+                    <li><a href="#" onclick=""><span>예금금리 변경 안내</span></a> <span class="date">2019.02.09</span></li>
+                    <li><a href="#" onclick=""><span>S스마트뱅킹(one up!) 개편 안내</span></a> <span class="date">2019.02.08</span></li>
+                </ul>
+                <a class="btnMore" href="#" onclick="" >더보기</a>
+            </div>
+            <div class="midCont02 listCont">
+                <h3>공고</h3>
+                <ul>
+                    <li><a href="#" onclick=""><span>악성코드 감염 예방 수칙</span></a> <span class="date">2019.02.08</span></li>
+                    <li><a href="#" onclick=""><span>악성앱을 통한 스마트뱅킹 사기 주의 안내</span></a> <span class="date">2019.02.08</span></li>
+                    <li><a href="#" onclick=""><span>S은행 사칭 이메일을 통한 악성앱 유포 주의 안내</span></a> <span class="date">2019.02.08</span></li>
+                    <li><a href="#" onclick=""><span>35개 금융사 제휴 청호ATM 신용정보 유출사고 관련 안내</span></a> <span class="date">2019.02.08</span></li>
+                </ul>
+                <a class="btnMore" href="#" onclick="" >더보기</a>
+            </div>
+            <div class="midCont03 listCont">
+                <ul>
+                    <li><a href="#" onclick=""><img src="img/security.png" alt="security"><!--<i class="fab fa-get-pocket"></i>-->금융 소비자 보호</a></li>
+                    <li><a href="#" onclick=""><i class="fas fa-headset"></i>고객센터</a></li>
+                    <li><a href="#" onclick=""><img src="img/lock-icon.png" alt="padlock"><!--<i class="fas fa-shield-alt"></i>-->보안센터</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footWrap">
+			<div class="foot_area">
+				<!-- 기본정보 -->
+				<ul class="nav-fnb">
+					<li><a href="#">이용상담</a></li>
+					<li><a href="#">보안프로그램</a></li>
+					<li><a href="#">사고신고</a></li>
+					<li><a href="#">보호금융상품등록부</a></li>
+					<li><a href="#"><strong>전자민원접수</strong></a></li>
+					<li><a href="#"><strong>개인정보처리방침</strong></a></li>
+					<li><a href="#"><strong>경영공시</strong></a></li>
+					<li><a href="#">그룹 내 고객정보 제공안내</a></li>
+				</ul>
+				<!-- 바로가기 및 고객센터 -->
+				<div class="info-group" id="navFooterGroup">
+					<ul class="list">
+						<!-- S금융그룹네트워크 -->
+						<li>
+							<a href="#" class="tit">S금융그룹네트워크</a>
+							<div class="info">
+								<ul>
+									<li><a href="#" target="_blank" title="새창 열기">S금융그룹</a></li>
+									<li><a href="#" target="_blank" title="새창 열기">S증권</a></li>
+									<li><a href="#" target="_blank" title="새창 열기">S카드</a></li>
+									<li><a href="#" target="_blank" title="새창 열기">S저축은행</a></li>
+									<li><a href="#" target="_blank" title="새창 열기">S신용정보</a></li>
+								</ul>
+							</div>
+						</li>
+						<!-- 대표전화 -->
+						<li class="ic1">
+							<a href="#" class="tit">대표전화 1588-0000</a>
+							<div class="info">
+								<dl>
+									<dt>대표전화</dt>
+									<dd>
+										<ul>
+											<li>1588-0000, 1599-0000, 1644-0000</li>
+											<li><span>해외에서 국내로 걸 때</span>+82-2-6300-0000</li>
+										</ul>
+									</dd>
+									<dt>상담전용</dt>
+									<dd>1800-0000<span>(분실 및 사고신고 제외)</span></dd>
+									<dt>기업전용</dt>
+									<dd>1599-0000</dd>
+									<!-- // -->
+								</dl>
+							</div>
+						</li>
+						<!-- 이메일상담 -->
+						<li class="ic2"><a href="#"><span class="tit">이메일상담</span></a></li>
+						<!-- 채팅상담 -->
+						<li class="ic3"><a href="#"><span class="tit">채팅상담(24시간 365일)</span></a></li>
+						<!-- 비교조회서비스 -->
+						<li>
+							<a href="#" class="tit">비교조회서비스</a>
+							<div class="info">
+								<ul>
+									<li><a href="#" target="_blank" title="새창 열기">은행금리비교</a></li>
+									<li><a href="#" target="_blank" title="새창 열기">금융상품 한눈에</a></li>
+									<li><a href="#" target="_blank" title="새창 열기">금융소비자정보포털 파인</a></li>
+								</ul>
+							</div>
+						</li>
+						<!-- ---------------------- -->
+					</ul>
+				</div>
+				<!-- SNS -->
+				<!--<div class="info-sns">
+					<ul>
+						<li class="ic1"><a href="#" target="_blank" title="S은행 페이스북 새창 열기">페이스북</a></li>
+						<li class="ic2"><a href="#" target="_blank" title="S은행 인스타그램 새창 열기">인스타그램</a></li>
+						<li class="ic3"><a href="#" target="_blank" title="S은행 YouTube 새창 열기">YouTube</a></li>
+						<li class="ic4"><a href="#" target="_blank" title="S은행 blog 새창 열기">blog</a></li>
+					</ul>
+				</div>-->
+				<!-- COPYRIGHT 및 마크 -->
+				<ul class="info-mark">
+				    <li class="ic1"><img src="img/ncsi.png" alt="NCSI"></li>
+					<li class="ic2"><a href="#" target="_blank" title="국가 공인 인증기관 웹와치 새창 열기"><img src="img/wa.png" alt="웹와치"></a></li>
+				</ul>
+				<p class="copy">Copyright S Bank. All Rights Reserved.</p>
+				<!-- ################################## -->
+			</div>
+        </div>
+    </footer>
+    <!-- // ### footer ### end -->
+</body>
+</html>
