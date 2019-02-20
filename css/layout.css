@@ -1,0 +1,189 @@
+@charset "utf-8";
+   
+/* PC 반응형 레이아웃 */   
+@media screen and (min-width:1350px){
+    
+}
+/* PC 반응형 레이아웃 종료 */
+
+/* 태블릿 반응형 레이아웃 */
+
+@media screen and (min-width:1101px) and (max-width:1340px){
+    body {
+		font-size: 90%;
+	}
+
+	#cubeTransition h2 {
+		font-size: 1em;
+	}
+    
+    /*pf*/
+    .logo{margin-top: -0.1em !important;}
+    .logo_right{margin-top: -0.1em !important;}
+    .effect_2{top:5px;}
+    .effect_2>img {height: 35em;}
+    .effect_2 {height: 40em !important;}
+    
+    /*pf next*/
+    
+    .effect_2_s{top:5px;}
+    .effect_2_s>img {height: 35em;}
+    .effect_2_s {height: 40em !important;}
+    
+    /*about*/
+    .about div{height: 15em;}
+}
+
+@media screen and (min-width:901px) and (max-width:1100px){
+    body {
+		font-size: 14px;
+	}
+
+	#cubeTransition h2 {
+		font-size: 1em;
+	}
+    
+    /*pf*/
+    .logo{margin-top: -0.1em !important;}
+    .logo_right{margin-top: -0.1em !important;}
+    .effect_2{top:10px;}
+    .effect_2>img{height: 35em;}
+    .effect_2 {height: 40em !important;}
+    
+    /*pf next*/
+    .effect_2_s{top:10px;}
+    .effect_2_s>img {height: 35em;}
+    .effect_2_s{height: 40em !important;}
+    
+    /*about*/
+    .about div{height: 15em;}
+}
+
+@media screen and (min-width:800px) and (max-width:900px){
+    body {
+		font-size: 14px;
+	}
+
+	#cubeTransition h2 {
+		font-size: 1em;
+	}
+    
+    /*pf*/
+    
+    .logo{margin-top: -0.1em !important;}
+    .logo_right{margin-top: -0.1em !important;}
+    .effect_2{top:20px;}
+    .effect_2 {height: 40em;}
+    .effect_2 {height: 40em !important;}
+    
+    /*pf next*/
+    .effect_2_s{top:20px;}
+    .effect_2_s {height: 40em;}
+    .effect_2_s {height: 40em !important;}
+    
+    /*about*/
+    
+    .about div{height: 15.2em;}
+}
+
+/* 태블릿 반응형 레이아웃 종료 */
+
+/* mobile 반응형 레이아웃 */   
+
+@media screen and (max-width:799px){
+    body {
+		font-size: 60%;
+	}
+     
+    /* grid */
+    .grid:nth-child(3){margin: 10% auto;}
+    .grid:nth-child(4){margin: 6% auto;}
+    
+    /* pf */
+    .logo{margin-top: -1em !important;}
+    .logo_right{margin-top: -1em !important;}
+    .effect_2{clear: both; width: 100% !important; height: 28em !important; top:15px;}
+    .effect_2:nth-child(1){ margin-bottom: 1%;}
+    
+    /*pf next*/
+    .effect_2_s{clear: both; width: 100% !important; height: 28em !important; top:15px;}
+    .effect_2_s_s{ margin-bottom: 1% !important;}
+    
+    /*about*/
+    .effect_3{width: 100% !important; margin-bottom: 1em !important;}
+    .effect_3 img{width:5em;}
+    .effect_3{background: url("../img/artificial.jpg")top left no-repeat !important; background-size: 130% 100% !important; opacity: 0.9;}
+    .effect_3 h1{color:#333 !important;}
+    #contents_bg3 img{display: none;}
+    .about{clear: both; width: 100% !important; margin-left: -1em !important;}
+    .about div{width: 18% !important; height: 17em;}
+    
+    /*Contact*/
+    .effect_4{width: 100% !important; margin-bottom: 2% !important;}
+    .contact{width: 100% !important;}
+
+}
+
+@media screen and (max-width:549px){
+    body {
+		font-size: 60%;
+	}
+    
+    /*button*/
+
+	.bullets li {
+		margin: 0 6px;
+	}
+
+	.credit {
+		bottom: initial;
+		top: 10px;
+		right: 10px;
+	}
+
+	.share,
+	.github-ribbon {
+		display: none;
+	}
+    
+    /* grid */
+    
+    .grid:nth-child(3){margin: 10% auto;}
+    .grid:nth-child(4){margin: 7% auto;}
+    
+    /*effect_1*/
+    
+    .effect_1 {font-size:70%;}
+    .content h1{font-size:5.5em !important; line-height: 0.75em;}
+    
+    /* pf */
+    .logo{margin-top: -1em !important;}
+    .logo_right{margin-top: -1em !important;}
+    .effect_2{clear: both; width: 100% !important; height: 28em !important; top:30px;}
+    .effect_2:nth-child(1){margin-bottom: 1%;}
+    .effect_2 figcaption h1{font-size: 1.95em;}
+    
+    /*pf next*/
+    .effect_2_s{clear: both; width: 100% !important; height: 28em !important; top:30px;}
+    .effect_2_s_s{margin-bottom: 1%;}
+    
+    /*about*/
+    
+    .effect_3{width: 100% !important; margin-bottom: 1em !important;}
+    .effect_3 img{width:5em;}
+    .about{clear: both; width: 100% !important; margin-left: -1em !important;}
+    .about div{width: 18% !important; height: 19em;}
+    .about div img{width:99.9% !important;}
+    
+    /*Contact*/
+    
+    .effect_4{width: 100% !important; margin-bottom: 2% !important;}
+    .contact{width: 100% !important;}
+    
+}
+
+
+/* mobile 반응형 레이아웃 종료 */
+
+/* PC : @media screen and (min-width:1080px){}
+태블릿 : @media screen and (min-width:426px) and (max-width:1079px){}
