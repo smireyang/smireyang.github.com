@@ -1,0 +1,44 @@
+.sub-top{
+    height:200px;
+    width:100%;
+    background-color:red;
+    background-image:url('../img/sub/service_top.jpg');
+    background-position:center center;
+}
+
+.sub_title {
+    margin: 2em 0;
+    text-align: center;
+    text-indent: 0.5em;
+}
+
+.infertility_tab{
+    max-width:1500px;
+    margin:0 auto;
+}
+.infertility_tab__container{
+    padding:0; width:80%; margin:0 auto;
+    margin-top:50px;
+}
+
+ul.infertility_tab li{list-style: none; width:25%; float:left;}
+ul.infertility_tab li a{display: block; color:#000; line-height: 4em; text-align: center; text-decoration: none; border-top:1px solid #ccc; border-left:1px solid #ccc; border-bottom:1px solid #ccc; font-size: 0.9em; font-weight: bold;}
+ul.infertility_tab li:last-child a{border-right:1px solid #ccc;}
+ul.infertility_tab li a.selected{background: #FDFDFD; color:#e96166; cursor:default; border-bottom:none; font-weight: bold; border-bottom:1px solid #ccc;}
+
+
+.temp{
+    margin: 100px 0;
+    height:500px;
+    font-size:3em;
+    text-align:center;
+}
+
+
+@media all and (max-width:763px){
+    .infertility_tab__container{
+        padding:0; width:95%; margin:0 auto;
+        margin-top:50px;
+    }
+}
+

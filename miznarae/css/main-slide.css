@@ -1,0 +1,109 @@
+
+    .top-banner .slick-slide{
+        /* 아이템간의 간격 설정*/
+       /* margin:0 10px; */
+       outline:none;
+   }
+
+   .top-banner{
+       position:relative;
+
+       overflow:hidden;
+   }
+
+   .top-banner .slick-prev,.slick-next{
+       position:absolute;
+       top:50%;
+       transform:translate(0,-50%);
+       z-index:1;
+       outline:none;
+       border:none;
+       background:none;
+       color:white;
+       font-size:0; /* 폰트 사이즈를 0으로 해서 prev, next텍스트를 안보이게 만들어준다 */
+       
+   }
+
+   /* 위치설정 */
+   .top-banner .slick-prev{
+       left:10px;
+   }
+   
+   .top-banner .slick-next{
+       right:10px;
+   }
+   
+   /* 실제로 보여지는 버튼 형태*/
+   .top-banner .slick-prev:after, .slick-next:after{
+       font-size:1.5rem;
+       border:1px solid white;
+       border-radius:50%;
+       display:block;
+       width:50px;
+       height:50px;
+       line-height:50px;
+       cursor:pointer;
+       background-color:rgba(0,0,0,0.1);
+       color:white;
+   }
+
+   /* 호버시 변경*/
+   .top-banner .slick-prev:hover:after, .slick-next:hover:after{
+       background-color:rgba(255,255,255,0.4);
+   }
+   
+   /* 버튼의 텍스트 */
+   .top-banner .slick-prev:after{
+       content:'<';
+
+   }
+   
+   .top-banner .slick-next:after{
+
+       content:'>';
+   }
+   
+   /* 아래의 점들 을 담고있는 컨테이너*/
+   .top-banner .slick-dots{
+       position:absolute;
+       bottom:10px;
+       left:50%;
+       transform:translate(-50%,0);
+       font-size:0;
+   }
+
+
+   .top-banner .slick-dots li{
+       list-style:none;
+       display:inline-block;
+       margin:0 3px; /* 점들간의 간격*/
+   }
+
+   .top-banner .slick-dots li button{
+       outline:none;
+       font-size:0; /*0으로 바꿔서 도트 숫자 안보이게*/
+       border:none;
+       background:none;
+       display:inline-block;
+       cursor:pointer;
+   }
+
+   /* 점들 디자인 */
+   .top-banner .slick-dots li button:after{
+       content:'';
+       display:block;
+       height: 10px;
+       width: 10px;
+       border-radius: 50%;
+       background-color:grey;
+   }
+
+   .top-banner .slick-dots .slick-active button:after{
+       background-color:#e96166; /* 현재 페이지 점의 디자인 */
+   }
+
+   @media all and (max-width:763px){
+       .top-banner .slick-prev:after, .top-banner .slick-next:after{
+           display:none;
+       }
+   }

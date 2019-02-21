@@ -1,0 +1,98 @@
+*{margin:0; padding: 0; list-style: none;}
+.content{max-width:1200px; margin:5em auto; position: relative;}
+
+/*서브 메인이미지*/
+.medicalimg{width:100%; display: block; height: 200px; background: url('../img/sub/medical.jpg')no-repeat; background-size: cover;     background-position:center center;}
+.infertilityimg{width:100%; display: block; height: 200px; background: url('../img/sub/infertility.jpg')no-repeat; background-size: cover;     background-position:center center;}
+
+/*title, text*/
+h1.sub_title{margin:2em 0; text-align: center; text-indent: 0.5em;}
+h3.sub_title_s{margin:1.5em 0;}
+h2.sub_text_title{color:#e96166; margin-bottom: 0.5em;}
+h3.sub_text_title_s{margin-bottom: 1em;}
+p{font-size:0.85em;}
+p.mgt{margin-top: 2em;}
+p span{color:#e96166;}
+
+.sub_title_line{background: #e96166; width: 0.3em; height: 1.1em; display: inline-block; margin-right:0.5em; vertical-align: middle;}
+
+/*call*/
+.sub_call {border: 1px solid #ddd; background: #FAFAFA; line-height: 3.5em; text-align: center;}
+.sub_call span{color:#e96166;}
+
+/*서브 이미지*/
+.sub_img{margin-bottom: 1em;}
+.sub_img ul li{display: inline-block; width:49%; box-sizing: border-box;}
+.sub_img img{width:100%;}
+
+/*테이블*/
+table.sub_table th.firstth, table.sub_table td.firsttd{border-top:1px solid #ddd;}
+table.sub_table th, table.sub_table td {
+    padding: 1em 0;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    font-family: 'Nanum Gothic', 'NanumGothic', '나눔고딕';
+    font-size: 0.85em;
+    text-align: center;
+}
+table.sub_table th{background: #FAFAFA;}
+table.sub_table th.lastth, table.sub_table td.lasttd{border-right:1px solid #ddd;}
+table.sub_table th span, table.sub_table td span {color: #e96166;}
+table.sub_table td span.blue {color: #66a7f6;}
+table.sub_table td, table.sub_table th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+/*산부인과*/
+.medical_thum ul li{display: inline-block; width:170px;}
+.medical_thum img{width: 100%; border: 1px solid #ddd;}
+
+/*감성분만*/
+.delivery_text_bg{background: #FAFAFA; padding: 1em; color: #e96166;}
+.delivery_text{line-height: 1.5em; padding-left:1em;}
+.delivery_text p{margin-bottom: 1em;}
+p.mgb{margin-bottom: 0;}
+
+/*난임센터*/
+.infertility_panel{line-height: 1.5em;}
+.infertility_text{margin-bottom: 2em;}
+
+/*난임센터 탭메뉴*/
+ul.infertility_tab{padding:0;} /*width:50%; margin: 0 auto;*/
+ul.infertility_tab li{list-style: none; width:20%; float:left;}
+ul.infertility_tab li a{display: block; color:#000; line-height: 4em; text-align: center; text-decoration: none; border-top:1px solid #ccc; border-left:1px solid #ccc; border-bottom:1px solid #ccc; font-size: 0.9em; font-weight: bold;}
+ul.infertility_tab li:last-child a{border-right:1px solid #ccc;}
+ul.infertility_tab li a.selected{background: #FDFDFD; color:#e96166; cursor:default; border-bottom:none; font-weight: bold; border-bottom:1px solid #ccc;}
+ul.infertility_panel{clear: both; padding: 0;}
+ul.infertility_panel li{padding: 3em 0.5em;}
+
+/*난임의 치료*/
+.infertility_solution{display: inline-block; border:6px solid #e96166; border-radius: 10px; padding:3em 1em; font-size:0.8em; text-align: center; vertical-align: middle; width:8em; height: 3em; line-height: 3em; margin-bottom: 2em;}
+.l_h{line-height: 1.5em;}
+.infertility_text .fas{font-size:4em; color:#ccc7; vertical-align: middle; padding-bottom: 0.4em;}
+.infertility_text p{margin-bottom: 2em;}
+
+/*반응형*/
+@media all and (max-width:600px){
+    /*난임센터 탭메뉴*/
+    .infertility_tab li a{height: 4em;}
+    .infertility_tab .five_tab{line-height: 2em;}
+}
+@media all and (min-width:601px) and (max-width:767px){
+    /*counseling*/
+    .visit_counseling, .call_counseling{display: block;}
+}
+@media all and (min-width:768px) and (max-width:1023px){
+    /*counseling*/
+    .visit_counseling{margin-right: 1em;}
+    .visit_counseling, .call_counseling{display: inline-block;}
+}
+@media all and (min-width:1024px){    
+    /*난임의치료*/
+    .infertility_solution{width:12%;}
+    
+    /*counseling*/
+    .visit_counseling{margin-right: 2em;}
+    .visit_counseling, .call_counseling{display: inline-block;}
+}

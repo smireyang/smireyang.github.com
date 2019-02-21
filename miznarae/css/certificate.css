@@ -1,0 +1,181 @@
+*{
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+hr{
+	clear: both;
+	visibility: hidden;
+}
+#header{
+	width: 100%;
+	height: 200px;
+	background: url("../img/subh_img.jpg");
+	background-size: cover;
+}
+a{
+	color: #000;
+}
+#info{
+	width:100%;
+	margin:5em auto;
+}
+h1.sub_title{ 
+	text-align: center; 
+	text-indent: 0.5em;
+}
+#info p{
+	width:80%;
+	font-size:0.9em;
+	padding-left: 1%;
+	padding-bottom:1%;
+	margin:2em auto;
+}
+.bar{
+	width:40px;
+	height:5px;
+	background-color:#F6B241;
+	margin: 0 auto;
+}
+#bar{
+	margin-top:40px;
+}
+#rull{
+	width:80%;
+	margin: 0 auto;
+}
+h3.sub_title_s{
+	margin:1.5em 0;
+}
+.sub_title_line{
+	background: #e96166; 
+	width: 0.3em; 
+	height: 1.1em; 
+	display: inline-block; 
+	margin-right:0.5em; 
+	vertical-align: middle;
+}
+#rull p{
+	font-size:0.9em;
+	padding-left: 1%;
+	padding-bottom:1%;
+	margin-bottom: 5%;
+}
+#top-box{
+	width:80%;
+	margin: 0 auto;
+}
+#top-box h2{
+	padding-bottom: 1%;
+	margin-top: 2%;
+	color: #E54660;
+}
+#top-box p{
+	font-size:0.9em;
+	padding-top: 1%;
+	margin-bottom: 5%;
+}
+#top-box article{
+	width:45%;
+	padding-top: 2%;
+	min-height: 250px;
+	margin: 0 auto;
+}
+#top-box .article2 p{
+	margin-bottom: 2%;
+}
+#top-box .article2 .a2-end{
+	margin-bottom: 5%;
+}
+.tabs {
+  display: flex;
+  flex-wrap: wrap; 
+}
+.tabs label {
+  margin:0;
+  width:50%;
+  order: 1;
+  display: block;
+  padding:1% 0;
+  text-align:center;
+  color:#E54660;
+  cursor: pointer;
+  background: #fff;
+  font-weight: bold;
+  transition: background ease 0.3s;
+  float:left;
+  font-size: 0.8rem;
+}
+.tabs .tab {
+  order: 99;
+  width: 100%;
+  height:100%;
+  display: none;
+  padding: 1rem;
+  background: #ededed;
+}
+.tabs input[type="radio"] {
+  display: none;
+}
+.tabs input[type="radio"]:checked + label {
+  background: #E54660;
+  color: #fff;
+}
+.tabs input[type="radio"]:checked + label + .tab {
+  display: block;
+}
+button{
+	padding:1%;
+	text-align:center;
+	background: #E54660;
+	color: #fff;
+	cursor: pointer;
+	font-weight: bold;
+	float:left;
+	border:0;
+	margin-right: 1%;
+	width: 49%;
+	font-size: 0.8em;
+	margin-bottom: 5%;
+}
+button.full-size{
+	width: 100%;
+}
+footer{
+	margin-top: 5%;
+}
+@media all and (min-width:768px)and (max-width:1023px){
+	#info p{
+		font-size: 0.8em;
+	}
+	#rull p{
+		font-size: 0.8em;
+	}
+	#top-box p{
+		font-size: 0.8em;
+	}
+	.tabs label{
+		font-size: 0.7em;
+	}
+	button{
+		font-size: 0.7em;
+	}
+}
+@media (max-width:767px){
+	#info p{
+		font-size: 0.7em;
+	}
+	#rull p{
+		font-size: 0.7em;
+	}
+	#top-box p{
+		font-size: 0.7em;
+	}
+	.tabs label{
+		font-size: 0.6em;
+	}
+	button{
+		font-size: 0.6em;
+	}
+}

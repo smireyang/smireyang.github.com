@@ -1,0 +1,141 @@
+/*서브 메인이미지*/
+.mizintroimg{width:100%; display: block; height: 200px; background: url('../img/sub/intro.jpg')no-repeat; background-size: cover;	background-position:center center;}
+
+*{
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   list-style: none;
+}
+
+.navi ul li{
+ display: inline-block;
+}
+.navi ul{
+	text-align: center;
+}
+.navi ul li a{
+	color: #000;
+	margin:30px;
+}
+
+.section{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.h{
+	font-size:50px;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.photo img{
+   width:70%;
+}
+.photo{
+	text-align: center;
+	position: relative;
+}
+.text2{
+	text-align: center;
+	margin-top:40px;
+}
+.text2 h2 span{
+	font-size:40px;
+	color: #E96166;
+}
+.text2 .miz{
+	font-size: 35px;
+	color: #E64661;
+}
+.text2 p{
+	margin-top:50px;
+}
+
+.bar{
+	width:40px;
+	height:5px;
+	background-color:#F6B241;
+	margin: 0 auto;
+}
+#bar{
+	margin-top:40px;
+}
+.boxwrap{
+	margin-top: 80px;
+	width: 100%;
+}
+.box{
+	width:32%;
+	display: inline-block;
+	height: 500px;
+	vertical-align: middle;
+	margin-left:1%;
+}
+.box img{
+	width: 100%;
+	display: block;
+}
+.texttbox{
+	background:#fff2f5;
+	height: 130px;
+}
+.texttbox p{
+	color:#E96166;
+	text-align: center;
+	padding-top:50px;
+	font-weight: bold;
+}
+.texttbox ul li{
+	color:#E96166;
+	text-align: center;
+	padding-top:9.5px;
+	font-size: 14px;
+	font-weight: bold;
+}
+#tt ul li{
+	padding-top: 17px;
+}
+
+@media all and (min-width:768px)and (max-width:1023px){ /*태블릿용*/
+.section{
+	max-width:980px;
+	margin: 0 auto;
+}
+.boxwrap{
+	margin-top: 80px;
+	width: 100%;
+}
+.box{
+	width:31.7%;
+	display: inline-block;
+	height: 500px;
+	vertical-align: middle;
+	margin-left:1%;
+}}
+@media all and (max-width:767px){ /*모바일용*/
+.text2 h2 span{
+	font-size:30px;
+}
+
+.text2{
+	font-size:14px;
+}
+.text2 h2{
+	font-size: 17px;
+}
+.box{
+	width:98%;
+	height: 500px;
+	vertical-align: middle;
+	display:block;
+	margin-left:1%;
+	margin-bottom:50px;
+}
+.boxwrap{
+	margin-top:80px;
+	margin-bottom:80px;
+	width: 100%;
+}
+}
+	
