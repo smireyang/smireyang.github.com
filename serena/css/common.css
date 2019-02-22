@@ -113,8 +113,16 @@ section{width: 1000px; margin: 0 auto; clear: both;}
 .page-more{background: #eee; width: 10%; margin: 0 auto; text-align: center; font-size: 0.8em; padding: 1em; font-weight: bold;}
 
 /*footer*/
-footer{width: 60%; margin: 0 auto; text-align: center; height: 8em; line-height: 1.5em; margin-top: 5em;}
-footer p{margin-top: 2em; font-weight: bold; }
+footer{ margin-top: 5em;}
+.foot-inner{width: 1000px; margin: 0 auto; height: 9em; line-height: 1.5em; padding-top: 2em; border-top:1px solid #ddd; position: relative;}
+.customer{margin-bottom: 1em;}
+.customer h2{display: inline-block; width: 14%; vertical-align: middle;}
+.customer p{display: inline-block; font-size: 14px; color:#EA4D6C; font-weight: bold;}
+.company-info{ float: left;}
+.company-info address{font-style: normal; font-size:13px;}
+.company-info address span>span{font-size: 18px;}
+.mark{position: absolute; top:3em; right: 0; width: 40%;}
+.mark p{font-size: 12px;}
 
 /*display*/
 
