@@ -35,7 +35,7 @@ header.sticky .sub-menu{margin-left: 3em; font-size:0.93em;}
 header.sticky .searchbar{margin-top: 2em;}
 
 /*nav*/
-.nav{height: 8em; width: 60%; position: absolute; top:0; left: 200px; text-align: center;}
+.nav{height: 8em; width: 60%; position: absolute; top:0; left: 20%; text-align: center;}
 .nav ul li{display: inline-block;}
 .nav ul li a{font-weight: bold; margin-top: 2em; padding: 1em; line-height: 1em; display: block; font-size: 1.1em;}
 /*.nav ul li a:hover{text-decoration: underline; text-decoration-color: #aaa;}*/
@@ -43,7 +43,7 @@ header.sticky .searchbar{margin-top: 2em;}
 /*sub*/
 .sub-navi {
 	position: absolute;
-    top:8em;
+    top:6em;
 	width: 1000px;
 	height: 9em;
 	background: #fff;
@@ -77,7 +77,7 @@ header.sticky .searchbar{margin-top: 2em;}
 }
 
 /*searchbar*/
-.searchbar{width: 18%; position: absolute; top:0; right: 0; margin-top: 3.5em;}
+.searchbar{width: 18%; position: absolute; top:0; right: 0; margin-top: 3.2em;}
 .input-search{border: 1px solid #eee; height: 1.8em; vertical-align: top;}
 .searchbar button{border: none; height: 1.8em; background: #fff;}
 .searchbar button img{width: 1.3em; vertical-align: middle;}
