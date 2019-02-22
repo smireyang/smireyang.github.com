@@ -113,10 +113,10 @@ span.title_dc{display: none; font-size:13px; color:#aaa; font-weight: normal; ve
 .eventImg_dc p{font-size: 12px; font-weight: bold;}
 
 /*이벤트 슬라이드*/
-.areaEvent{width: 596px; height: 230px; overflow: hidden;}
+.areaEvent{width: 596px; height: 210px; overflow: hidden;}
 
-.eventImg1, .eventImg2, .eventImg3, .eventImg4{width:595px; height: 230px; float:left;}
-.sliderEvent{width:2380px; height: 250px;}
+.eventImg1, .eventImg2, .eventImg3, .eventImg4{width:595px; height: 210px; float:left;}
+.sliderEvent{width:2380px; height: 210px;}
 .mc_prevbtn{position: absolute; top:110px; cursor: pointer; z-index: 1;}
 .mc_nextbtn{position: absolute; top:110px; right: 50%; cursor: pointer; z-index: 1;}
 .mc_prevbtn .fas, .mc_nextbtn .fas{font-size:30px; color:#eee;}
@@ -130,10 +130,10 @@ span.title_dc{display: none; font-size:13px; color:#aaa; font-weight: normal; ve
 
 /*추천상품 슬라이드*/
 
-.areaMd{width: 596px; height: 230px; overflow: hidden;}
+.areaMd{width: 596px; height: 210px; overflow: hidden;}
 
-.recommImg1, .recommImg2, .recommImg3{width:595px; height: 230px; float:left;}
-.sliderRecomm{width:2380px; height: 250px;}
+.recommImg1, .recommImg2, .recommImg3{width:595px; height: 210px; float:left;}
+.sliderRecomm{width:2380px; height: 210px;}
 .md_prevbtn{position: absolute; top:110px; cursor: pointer; z-index: 1;}
 .md_nextbtn{position: absolute; top:110px; right: 0%; cursor: pointer; z-index: 1;}
 .md_prevbtn .fas, .md_nextbtn .fas{font-size:30px; color:#eee;}
@@ -144,9 +144,9 @@ span.title_dc{display: none; font-size:13px; color:#aaa; font-weight: normal; ve
 .listCont h3{padding-bottom: 15px;}
 
 .midCont01, .midCont02{border:1px solid #e5e5e5; padding: 15px; box-sizing: border-box; position: relative; width: 510px; height: 153px; vertical-align: top;}
-.midCont01 a, .midCont02 a{font-size:14px; line-height: 22px; display: inline-block; width: 406px;}
+.midCont01 a, .midCont02 a{font-size:14px; line-height: 22px; display: inline-block;}
 
-span.date{font-size: 13px; display: inline-block;}
+span.date{font-size: 13px; display: inline-block; position: absolute; right: 10px;}
 .btnMore{position: absolute; top:15px; right: 15px; text-align: right;}
 
 /*사이드*/
