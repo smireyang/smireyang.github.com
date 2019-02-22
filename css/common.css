@@ -997,11 +997,12 @@ div.effect_3_1:hover{
 
 input,
 textarea{
-	font-family: font2 /*"Brandon Grotesque Light","silgothic"*/;
+	font-family: font2, 'Poppins' /*"Brandon Grotesque Light","silgothic"*/;
 	font-size: 1em;
 	border:none;
 	margin-bottom: 0.5em;
 	margin-left: 0;
+    font-weight: normal;
 }
 textarea{padding-top: 0.5em; margin-bottom: 0.2em;}
 #name,
