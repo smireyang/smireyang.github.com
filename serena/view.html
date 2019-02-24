@@ -83,21 +83,21 @@
             </a>
         </div>
 
-        <div class="product-view">
+        <div class="product-view-inner">
             <div class="content">
                 <!-- location -->
-                <div class="page-path"><a href="index.html" class="home-path">Home</a>><a href="sub.html">Clothing</a>><a href="#">Detail-View</a></div>
+                <div class="page-path"><a href="index.html">Home</a>><a href="sub.html">Clothing</a>><a href="#">Detail-View</a></div>
                 <!-- //location -->
                 <!-- body -->
                 <div class="product-view-wrap">
                     <!-- product-view -->
                     <section class="product-view">
                         <!-- view-pager -->
-                        <a href="#" class="question bt-ly"><img src="images/clothing2.jpg" alt="dress"></a>
+                        <a href="#" class="question"><img src="images/clothing2.jpg" alt="dress"></a>
                         <div class="view-info">
                             <div class="title">
                                 <span>STYLE NUMBER SR0000</span>
-                                <h1 id="godNmDiv">드레스</h1>
+                                <h1>드레스</h1>
                             </div>
                             <!-- --------가격영역---------- -->
                             <dl class="info">
@@ -109,40 +109,16 @@
                                     <span> 회원가</span> </dt>
                                 <dd>
                                     <em>474,600</em>
-                                    <a href="#" class="btn btn-small ml5">30%</a> <!-- layer-box 회원가 안내 -->
-                                    <!--<div class="layer-box member-price-info">
-                                        <div class="box-inner">
-                                            <p class="tit-01 sgm">회원가 안내</p>
-                                            <div class="box-grey">
-                                                <ul class="card-lst global-lst">
-                                                    <li>
-                                                        <p class="bul-dot">상품할인 : 203,400원</p>
-                                                    </li>
-                                                    <li>
-                                                        <p class="bul-dot">쿠폰할인 : 0원</p>
-                                                    </li>
-                                                    <li>
-                                                        <p class="bul-dot">총 할인금액 : 203,400원</p>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <p class="box-close"><a href="#">닫기</a></p>
-                                        </div>
-                                    </div>-->
-                                    <!-- //layer-box -->
+                                    <a href="#">30%</a>
                                 </dd>
                             </dl>
-                            <!-- 적립포인트 -->
-                            <!-- 추가적립포인트 -->
-                            <!-- 즉시 할인 -->
                             <dl class="info">
                                 <dt>컬러</dt>
                                 <dd>
                                     뉴 아이보리
                                     <ul class="color-type">
                                         <li>
-                                            <a href="#" class="on">
-                                                <!-- 현재 선택 되어있는 곳은 클래스 on 추가 -->
+                                            <a href="#">
                                                 <span class="color"></span>
                                             </a>
                                         </li>
@@ -153,22 +129,19 @@
                             <dl class="info">
                                 <dt>사이즈</dt>
                                 <dd>
-                                    <select name="" id="">
-                                        <option value="IT201808271987813" selected="">000</option>
-                                        <option value="IT201808271987814">002</option>
-                                        <option value="IT201808271987815">004</option>
+                                    <select>
+                                        <option>000</option>
+                                        <option>002</option>
+                                        <option>004</option>
                                     </select>
                                     <a href="#" class="size-guide">사이즈 가이드</a>
-                                    <input type="hidden" name="itmNo" id="itmNo0" value="IT201808271987813">
-                                    <input type="hidden" name="itmNm" id="itmNm0" value="000">
-                                    <input type="hidden" id="tempResveSaleGodYn" value="">
                                 </dd>
                             </dl>
                             <!-- 수량선택 영역 -->
                             <dl class="info">
                                 <dt>수량</dt>
                                 <dd>
-                                    <select name="qty" id="qty">
+                                    <select>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -179,74 +152,41 @@
                             <dl class="info">
                                 <dt>배송방법/배송비</dt>
                                 <dd>
-                                    <input type="hidden" name="dlvSect" value="GNRL_DLV" checked="">
                                     <span>일반택배(무료배송)</span>
                                 </dd>
                             </dl>
-                            <script>
-                                $(document).ready(function() {
-                                    $("#p_layer").click(function() {
-                                        if ($("#p_layer_img").css("display") == "none") {
-                                            $("#p_layer_img").css("display", "block");
-                                        } else {
-                                            $("#p_layer_img").css("display", "none");
-                                        }
-                                    });
-
-                                });
-                            </script>
                             <!-- btn-wrap -->
                             <div class="btn-wrap">
                                 <div>
-                                    <a href="#" class="btn btn-buy btn-full btn-border01">바로 구매</a>
+                                    <a href="#" class="btn btn-buy">바로 구매</a>
                                 </div>
                                 <div>
                                     <a href="#" class="btn">쇼핑백 담기</a>
                                     <a href="#" class="btn">위시리스트에 추가</a>
                                 </div>
-                                <style>
-                                    #p_layer {float:right; text-decoration:underline;cursor:pointer; font-weight:normal}
-										#p_layer_img {display:none; margin-top:14px}
-										#p_layer_img > p {text-align:left; letter-spacing:0.2px; line-height:20px;}
-									</style>
-
-                                <div>
-                                    <div style="margin-top:20px">
-                                        <p style="float:left; font-weight:bold">무료배송 &amp; 무료선물포장 서비스</p>
+                                <div class="gift-service">
+                                    <div>
+                                        <p class="left">무료배송 &amp; 무료선물포장 서비스</p>
                                         <p id="p_layer">자세히보기</p>
                                     </div>
-                                    <div id="p_layer_img">
-                                        <p style="font-size:11px;">구매 금액과 관계 없이 전 상품 무료 배송 서비스를 제공해 드리며, 구매 시<br>
-                                            선물 포장 서비스를 선택하시면, 세레나만의 럭셔리한 선물포장 서비스를<br>
-                                            제공해 드립니다.</p>
-                                        <!--<img src="images/gift.jpg" style="padding-top:10px; block; width:390px;">-->
+                                    <div id="p_layer_dc">
+                                        <p>구매 금액과 관계 없이 전 상품 무료 배송 서비스를 제공해 드리며, 구매 시 선물 포장 서비스를 선택하시면, 세레나만의 럭셔리한 선물포장 서비스를
+                                        제공해 드립니다.</p>
                                     </div>
                                 </div>
                             </div>
-                            <!-- //btn-wrap -->
-                            <!-- <dl class="info2">
-                                <dt>공유</dt>
-                                <dd>
-                                    <ul class="sns">
-                                        <li><a href="#" class="facebook">facebook</a></li>
-                                        <li><a href="#" class="twitter">twitter</a></li>
-                                        <li><a href="#" class="pinsta">pinsta</a></li>
-                                        <li><a href="#" class="kakao">kakao</a></li>
-                                    </ul>
-                                </dd>
-                            </dl>-->
                         </div>
                         <!-- //view-info -->
                     </section>
                 </div>
                 <!-- //product-view -->
                 <!-- view-content -->
-                <div class="tabs view-content ui-tabs">
-                    <ul class="menu-list" role="tablist">
-                        <li role="tab"><a href="#tabs-1" class="ui-tabs-anchor selected" role="presentation" tabindex="-1" id="ui-id-1">상품상세정보</a></li>
-                        <li role="tab"><a href="#tabs-2" id="prdReviewCount" class="ui-tabs-anchor" role="presentation" tabindex="-1">상품리뷰 (0)</a></li>
-                        <li role="tab"><a href="#tabs-3" id="prdQnaCount" class="ui-tabs-anchor" role="presentation" tabindex="-1">상품 Q &amp; A(1)</a></li>
-                        <li role="tab"><a href="#tabs-4" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-2">배송/반품/교환 안내</a></li>
+                <div class="tabs view-content">
+                    <ul class="menu-list">
+                        <li><a href="#tabs-1" class="selected">상품상세정보</a></li>
+                        <li><a href="#tabs-2">상품리뷰 (0)</a></li>
+                        <li><a href="#tabs-3">상품 Q &amp; A(1)</a></li>
+                        <li><a href="#tabs-4">배송/반품/교환 안내</a></li>
                     </ul>
                     <ul class="panel">
                         <li id="tabs-1">
@@ -335,7 +275,7 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                </section> <!-- product-link -->
+                                </section>
                                 <!-- //product-link -->
                             </div>
                         </li>
@@ -346,36 +286,28 @@
                                     <header>
                                         <h2>상품리뷰</h2>
                                         <div class="right">
-                                            <a href="#" class="btn btn-small">리뷰작성</a>
+                                            <a href="#">리뷰작성</a>
                                         </div>
                                     </header>
                                     <div class="review">
                                         <div class="box01">
-                                            <h3>TOTAL</h3>
-                                            <span class="star">
-                                                <span style="width: 0%;">0%</span>
-                                            </span>
+                                            <h3>TOTAL</h3>    
+                                            <span>0%</span>
                                         </div>
                                         <div class="box02">
                                             <h3>별점</h3>
                                             <dl>
                                                 <dt>품질</dt>
                                                 <dd>
-                                                    <span class="star">
-                                                        <span style="width: 0%;">0%</span>
-                                                    </span>
+                                                    <span>0%</span>
                                                 </dd>
                                                 <dt>포장</dt>
                                                 <dd>
-                                                    <span class="star">
-                                                        <span style="width: 0%;">0%</span>
-                                                    </span>
+                                                    <span>0%</span>
                                                 </dd>
                                                 <dt>배송</dt>
                                                 <dd>
-                                                    <span class="star">
-                                                        <span style="width: 0%;">0%</span>
-                                                    </span>
+                                                    <span>0%</span>
                                                 </dd>
                                             </dl>
                                         </div>
@@ -384,30 +316,15 @@
                                             <dl>
                                                 <dt>작아요</dt>
                                                 <dd>
-                                                    <span class="graph-wrap">
-                                                        <span class="graph">
-                                                            <span style="width: 0%;"></span>
-                                                        </span>
-                                                        <span class="num">0%</span>
-                                                    </span>
+                                                <span>0%</span>
                                                 </dd>
                                                 <dt>딱 맞아요</dt>
                                                 <dd>
-                                                    <span class="graph-wrap">
-                                                        <span class="graph">
-                                                            <span style="width: 0%;"></span>
-                                                        </span>
-                                                        <span class="num">0%</span>
-                                                    </span>
+                                                <span>0%</span>
                                                 </dd>
                                                 <dt>커요</dt>
-                                                <dd>
-                                                    <span class="graph-wrap">
-                                                        <span class="graph">
-                                                            <span style="width: 0%;"></span>
-                                                        </span>
-                                                        <span class="num">0%</span>
-                                                    </span>
+                                                <dd>                               
+                                                <span>0%</span>
                                                 </dd>
                                             </dl>
                                         </div>
@@ -416,36 +333,21 @@
                                             <dl>
                                                 <dt>밝아요</dt>
                                                 <dd>
-                                                    <span class="graph-wrap">
-                                                        <span class="graph">
-                                                            <span style="width: 0%;"></span>
-                                                        </span>
-                                                        <span class="num">0%</span>
-                                                    </span>
+                                                  <span>0%</span>
                                                 </dd>
                                                 <dt>화면과 같아요</dt>
                                                 <dd>
-                                                    <span class="graph-wrap">
-                                                        <span class="graph">
-                                                            <span style="width: 0%;"></span>
-                                                        </span>
-                                                        <span class="num">0%</span>
-                                                    </span>
+                                                   <span>0%</span>    
                                                 </dd>
                                                 <dt>어두워요</dt>
                                                 <dd>
-                                                    <span class="graph-wrap">
-                                                        <span class="graph">
-                                                            <span style="width: 0%;"></span>
-                                                        </span>
-                                                        <span class="num">0%</span>
-                                                    </span>
+                                                <span>0%</span>
                                                 </dd>
                                             </dl>
                                         </div>
                                     </div>
                                 </section>
-                                <div class="product-review" id="productReviewList">
+                                <div class="product-review">
                                     <!-- table-header -->
                                     <div class="table-header">
                                         전체 <em>0</em>건
@@ -455,10 +357,10 @@
                                                 <a href="#">텍스트 리뷰</a>
                                             <script>
                                             </script>
-                                            <select name="" id="">
-                                                <option value="" selected="">최근 등록순</option>
-                                                <option value="top">최고평점순</option>
-                                                <option value="low">최저평점순</option>
+                                            <select>
+                                                <option>최근 등록순</option>
+                                                <option>최고 평점순</option>
+                                                <option>최저 평점순</option>
                                             </select>
                                         </div>
                                     </div>
@@ -476,7 +378,7 @@
                                             <tbody>
                                                 <tr>
                                                     <td colspan="5">
-                                                        <p class="msg-no-result01">작성된 리뷰가 없습니다.</p>
+                                                        <p>작성된 리뷰가 없습니다.</p>
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -494,7 +396,7 @@
                                         <h2>상품 Q&amp;A</h2>
                                         <span>전체 <em>1</em>건</span>
                                         <div class="right">
-                                            <a href="#" class="btn btn-small">문의하기</a>
+                                            <a href="#">문의하기</a>
                                         </div>
                                     </header>
                                     <!-- qna-table -->
@@ -511,48 +413,21 @@
                                                 <tr>
                                                     <td class="text-q">Q</td>
                                                     <td class="left title">
-                                                        <!-- 답변완료인 경우 -->
-                                                        <a href="#none" class="que" onclick="return false;">
-                                                            <!-- 비밀글인 경우 -->
-                                                            <span class="que">비밀글입니다.</span>
+                                                        <a href="#">
+                                                            <span>비밀글입니다.</span>
                                                         </a>
                                                     </td>
                                                     <td>
-                                                        <!--비밀글 아이콘-->
                                                         u******2
                                                     </td>
-                                                    <td class="ssr">2019.01.18</td>
+                                                    <td>2019.01.18</td>
                                                     <td>
-                                                        <span class="fc-org">답변완료</span>
-                                                    </td>
-                                                </tr>
-                                                <tr class="answer" style="display: none;">
-                                                    <td class="left box-grey" colspan="5">
-                                                        <div class="para-ans">
-                                                            <!-- 비밀글인 경우 -->
-                                                            비밀글입니다.
-                                                            <p class="date">2019.01.18</p>
-                                                        </div>
+                                                        <span>답변완료</span>
                                                     </td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div> <!-- //qna-table -->
-                                    <!-- pagenation -->
-                                    <div class="paginnav">
-                                        <ul>
-                                            <li class="current"><a href="#">1</a></li>
-                                        </ul>
-                                    </div>
-                                    <!-- //pagenation -->
-                                    <ul class="noti_list">
-                                        <li>
-                                            - 상품에 대한 문의사항을 등록해주시면 답변을 드립니다. 배송, 결제, 반품 등 주문 관련 문의는 <a href="#">마이페이지 &gt; 1:1상담</a>을 이용해주세요.
-                                        </li>
-                                        <li>
-                                            - 상품과 직접적으로 관계가 없거나, 약관 및 법률 등에 위배되는 내용은 작성이 제한되거나 관리자의 권한으로 삭제될 수 있습니다.
-                                        </li>
-                                    </ul>
                                 </section>
                                 <!-- //product-qna -->
                             </div>

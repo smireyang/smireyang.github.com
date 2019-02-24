@@ -108,6 +108,15 @@ $(function () {
             return false;
     });
     
+    //선물포장 서비스
+    $("#p_layer").click(function () {
+        if ($("#p_layer_dc").css("display") == "none") {
+            $("#p_layer_dc").css("display", "block");
+        } else {
+            $("#p_layer_dc").css("display", "none");
+        }
+    });
+    
     //Top
     $(window).scroll(function () {
 		if ($(this).scrollTop() > 200) {
