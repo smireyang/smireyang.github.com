@@ -213,7 +213,7 @@ footer{}
 /****로그인화면****/
 
 /*header*/
-.header{height: 5em; line-height: 5em;}
+.header{height: 6em; line-height: 6em;}
 .header .line{height: 1px; border-bottom: 3px solid #333; width: 1200px; margin: 0 auto;}
 .bankingLogo{display: inline-block; width: 10%; vertical-align: middle;}
 .bankingLogin{display: inline-block; vertical-align: middle; cursor:context-menu; }
@@ -222,7 +222,7 @@ footer{}
 
 /*section*/
 section{clear: both;}
-.bankingConInner{width: 1200px; margin: 1.5em auto;}
+.bankingConInner{width: 1200px; margin: 2em auto;}
 .bankingTop{cursor: context-menu; width: 1010px; margin: 0 auto;  background: #f7f7f7; padding: 1em;}
 .bankingTop img{width: 100px; margin-right: 10px; display: inline-block; vertical-align: middle;}
 .bankingTop .Topdc{width:890px; display: inline-block; vertical-align: middle; padding-top: 0em;}
@@ -239,7 +239,7 @@ section{clear: both;}
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
     box-sizing:  border-box;
     height: 330px;
-    margin: 1em 0;
+    margin: 2em 0;
 }
 .certTitle{margin: -25px -25px 25px;
    padding: 15px 25px;
