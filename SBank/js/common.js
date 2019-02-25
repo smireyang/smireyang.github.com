@@ -16,8 +16,17 @@ $(document).ready(function() {
     //슬라이드 배너
     
     var  currentIndex=1;
+    
+    function showNextSlide(){  
+    
+    if(currentIndex==1){
+        $(".nextbtn").click();
+    }else{
+         $(".prevbtn").click();
+        }
+    }
+    
     $(".nextbtn").click(function(){
-      
          if(currentIndex==1){
         $(".sliderVisual").animate({marginLeft: parseInt($(".sliderVisual").css("margin-left"))-1100+"px"},"slow");
         currentIndex=0;
@@ -27,17 +36,23 @@ $(document).ready(function() {
     });
     
     $(".prevbtn").click(function(){
-   
         if(currentIndex==0){
         $(".sliderVisual").animate({marginLeft: parseInt($(".sliderVisual").css("margin-left"))+1100+"px"},"slow");
         currentIndex=1;
     }else{
       stop();
         }
-    });    
+    });
+    
+     var main_timer=setInterval(showNextSlide,4000);
+    
+    $(".sliderVisual, .prevbtn, .nextbtn").mouseover(function(){
+        clearInterval(main_timer);
+    }).mouseout(function(){
+       main_timer=setInterval(showNextSlide,4000);
+    });
     
     //이벤트
-
     
     $(".sliderEvent li:last").prependTo(".sliderEvent");
     $(".sliderEvent").css("margin-left","-595px");
@@ -57,6 +72,17 @@ $(document).ready(function() {
             $(".sliderEvent li:first").appendTo(".sliderEvent");
             $(".sliderEvent").css("marginLeft","-595px");
         });
+    });
+    var mc_timer=setInterval(function(){
+        $(".mc_nextbtn").click();
+    },4000);
+    
+    $(".sliderEvent, .mc_prevbtn, .mc_nextbtn").mouseover(function(){
+        clearInterval(mc_timer);
+    }).mouseout(function(){
+        mc_timer=setInterval(function(){
+            $(".mc_nextbtn").click();
+        },4000);
     });
     
     //추천상품
@@ -79,6 +105,18 @@ $(document).ready(function() {
             $(".sliderRecomm li:first").appendTo(".sliderRecomm");
             $(".sliderRecomm").css("marginLeft","-595px");
         });
+    });
+    
+    var md_timer=setInterval(function(){
+        $(".md_nextbtn").click();
+    },4000);
+    
+    $(".sliderRecomm, .md_prevbtn, .md_nextbtn").mouseover(function(){
+        clearInterval(md_timer);
+    }).mouseout(function(){
+        md_timer=setInterval(function(){
+            $(".md_nextbtn").click();
+        },4000);
     });
 
     
