@@ -13,7 +13,7 @@
 
 <body>
     <div class="top">
-        <div class="top-wrap">
+        <div class="top-inner">
             <div class="top-left"><a href="#"><i class="fas fa-map-marker-alt"></i> 매장안내</a></div>
             <div class="login"><a href="#">로그인</a> <a href="#">회원가입</a> <a href="#">마이 페이지</a> <a href="#"><i class="far fa-heart"></i></a> <a href="#"><i class="fas fa-shopping-cart"></i></a></div>
         </div>
@@ -34,7 +34,15 @@
                     <li><a href="#">Sale</a></li>
                 </ul>
             </div>
-            <div class="sub-navi">
+            <div class="searchbar">
+                <form>
+                    <input type="text" class="input-search" />
+                    <button>
+                        <!--<i class="fas fa-search"></i>--> <img src="images/search.png" alt="search"></button>
+                </form>
+            </div>
+        </div>
+        <div class="sub-navi">
                 <div class="wrap">
                     <div class="sub-menu">
                         <ul class="sub sub1">
@@ -61,17 +69,9 @@
                     </div>
                 </div>
             </div>
-            <div class="searchbar">
-                <form>
-                    <input type="text" class="input-search" />
-                    <button>
-                        <!--<i class="fas fa-search"></i>--> <img src="images/search.png" alt="search"></button>
-                </form>
-            </div>
-        </div>
     </header>
-    <section>
-        <div class="message">
+    <div class="message">
+           <div class="message-inner">
             <a href="#">
                 <h5>무료 배송 & 무료 선물포장 서비스 I 자세히 보기</h5>
             </a>
@@ -81,12 +81,13 @@
             <a href="#">
                 <h5>온라인 단독 상품 최대 40% 세일!(기존 30%+추가10%) I 바로가기</h5>
             </a>
+            </div>
         </div>
-
+    <section>
         <div class="product-view-inner">
             <div class="content">
                 <!-- location -->
-                <div class="page-path"><a href="index.html">Home</a>><a href="sub.html">Clothing</a>><a href="#">Detail-View</a></div>
+                <div class="page-path"><a href="index.html">Home</a>><a href="sub.html">Clothing</a>><a href="#" style="color:#0c2340; text-decoration-line:line-through;">Detail-View</a></div>
                 <!-- //location -->
                 <!-- body -->
                 <div class="product-view-wrap">
@@ -399,7 +400,7 @@
                                     <div class="qna-table">
                                         <table>
                                             <colgroup>
-                                                <col style="width: 10%">
+                                                <col style="width: 15%">
                                                 <col style="width: 30%;">
                                                 <col style="width: 30%;">
                                                 <col style="width: 20%;">

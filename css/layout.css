@@ -73,13 +73,14 @@
     .logo{margin-top: -0.1em !important;}
     .logo_right{margin-top: -0.1em !important;}
     .effect_2{top:20px;}
-    .effect_2 {height: 40em;}
-    .effect_2 {height: 40em !important;}
+    .effect_2 {height: 100em;}
+    .effect_2 {height: 100em !important;}
     
     /*pf next*/
     .effect_2_s{top:20px;}
-    .effect_2_s {height: 40em;}
-    .effect_2_s {height: 40em !important;}
+    .effect_2_s {height: 150em;}
+    .effect_2_s {height: 150em !important;}
+    .effect_2_s img{height: 50em !important;}
     
     /*about*/
     
@@ -102,15 +103,15 @@
     /* pf */
     .logo{margin-top: -1em !important;}
     .logo_right{margin-top: -1em !important;}
-    .effect_2{clear: both; width: 100% !important; height: 28em !important; top:15px;}
+    .effect_2{clear: both; width: 100% !important; height: 100em !important; top:15px;}
     .effect_2:nth-child(1){ margin-bottom: 1%;}
     
     /*pf next*/
-    .effect_2_s{clear: both; width: 100% !important; height: 28em !important; top:15px;}
+    .effect_2_s{clear: both; width: 100% !important; height: 100em !important; top:15px;}
     .effect_2_s_s{ margin-bottom: 1% !important;}
     
     /*about*/
-    .effect_3{width: 100% !important; margin-bottom: 1em !important;}
+    .effect_3{width: 100% !important; height: 100em !important; margin-bottom: 1em !important;}
     .effect_3 img{width:5em;}
     .effect_3{background: url("../img/artificial.jpg")top left no-repeat !important; background-size: 130% 100% !important; opacity: 0.9;}
     .effect_3 h1{color:#333 !important;}
@@ -172,7 +173,7 @@
     .effect_3{width: 100% !important; margin-bottom: 1em !important;}
     .effect_3 img{width:5em;}
     .about{clear: both; width: 100% !important; margin-left: -1em !important;}
-    .about div{width: 18% !important; height: 19em;}
+    .about div{width: 18% !important; height: 20em;}
     .about div img{width:99.9% !important;}
     
     /*Contact*/

@@ -6,13 +6,12 @@ $(document).ready(function() {
     
     $(".subMenu").hide();
 	$(".mainMenu li").hover(function(){
-		$(".subMenu").show();
+		$(".subMenu").slideDown();
 	});
 	$(".subMenu").mouseleave(function(){
-		$(".subMenu").hide();
+		$(".subMenu").slideUp();
 	});
-    
-    
+        
     //슬라이드 배너
     
     var  currentIndex=1;
@@ -25,7 +24,7 @@ $(document).ready(function() {
          $(".prevbtn").click();
         }
     }
-    
+
     $(".nextbtn").click(function(){
          if(currentIndex==1){
         $(".sliderVisual").animate({marginLeft: parseInt($(".sliderVisual").css("margin-left"))-1100+"px"},"slow");
@@ -44,12 +43,12 @@ $(document).ready(function() {
         }
     });
     
-     var main_timer=setInterval(showNextSlide,4000);
+     var main_timer=setInterval(showNextSlide,5000);
     
     $(".sliderVisual, .prevbtn, .nextbtn").mouseover(function(){
         clearInterval(main_timer);
     }).mouseout(function(){
-       main_timer=setInterval(showNextSlide,4000);
+       main_timer=setInterval(showNextSlide,5000);
     });
     
     //이벤트
@@ -75,14 +74,14 @@ $(document).ready(function() {
     });
     var mc_timer=setInterval(function(){
         $(".mc_nextbtn").click();
-    },4000);
+    },5000);
     
     $(".sliderEvent, .mc_prevbtn, .mc_nextbtn").mouseover(function(){
         clearInterval(mc_timer);
     }).mouseout(function(){
         mc_timer=setInterval(function(){
             $(".mc_nextbtn").click();
-        },4000);
+        },5000);
     });
     
     //추천상품
@@ -109,18 +108,18 @@ $(document).ready(function() {
     
     var md_timer=setInterval(function(){
         $(".md_nextbtn").click();
-    },4000);
+    },5000);
     
     $(".sliderRecomm, .md_prevbtn, .md_nextbtn").mouseover(function(){
         clearInterval(md_timer);
     }).mouseout(function(){
         md_timer=setInterval(function(){
             $(".md_nextbtn").click();
-        },4000);
+        },5000);
     });
 
     
-	// 레이아웃 : FOOTER 셀렉트
+	// FOOTER 셀렉트
 	var navFooter = (function(){
 		var footer_timer = null;
 
@@ -139,7 +138,7 @@ $(document).ready(function() {
 					.bind('focus', function(ev){clearTimeout(gnb_timer);})
 					.bind('blur', function(ev){gnb_timer = setTimeout(function(){
 						$('.info-group .list > li').removeClass('on');
-					},600);});
+					},1000);});
 
 				//마우스이벤트
 				$(document).bind('mouseover.naviGnb', function(e){

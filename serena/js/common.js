@@ -2,10 +2,10 @@ $(function () {
     //navi
 	$(".sub-navi").hide();
 	$(".nav li").hover(function(){
-		$(".sub-navi").show();
+		$(".sub-navi").fadeIn();
 	});
 	$(".sub-navi").mouseleave(function(){
-		$(".sub-navi").hide();
+		$(".sub-navi").fadeOut();
 	});
     
     //header고정
@@ -106,6 +106,18 @@ $(function () {
             $("ul.panel li").fadeOut("fast");
             $($(this).attr("href")).fadeIn("fast");
             return false;
+    });
+    
+    //필터
+    $(document).on('click', '.sort-box > a', function(){ // 상품 정렬 메뉴
+	$(this).toggleClass('on').parent().siblings().find('> a.on').removeClass('on');
+	$(this).next().toggle().parent().siblings().find('> div').hide();
+	return false;
+    });
+    $(document).on('click', '.sort-box .close', function(){  // 상품 닫기 버튼
+        $('.sort-box > a').removeClass('on');
+        $('.sort-box > div').hide();
+        return false;
     });
     
     //선물포장 서비스
