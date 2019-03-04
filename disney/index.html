@@ -10,13 +10,14 @@
 <link rel="stylesheet" href="css/common.css">
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/rollmain.js"></script>
+<script src="js/jquery.easing.js"></script>	
 <script src="js/common.js"></script>  
 <script src="js/jquery.smooth-scroll.min.js"></script> 
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
 <!-- wrap -->
 <div id="wrap">
-
 	<header id="header">
 		<div class="header_area box_inner clear">	
 			<h1><a href="#">Desney</a></h1>
@@ -25,9 +26,22 @@
 			<div class="header_cont">
 				<nav>
 				<ul class="gnb clear">
+				    <li><a href="#" class="openAll0">WALT DISNEY</a>
+				    <div class="gnb_depth gnb_depth2_0">
+                            <ul class="submenu_list">
+                                <li><a href="index.html">홈</a></li>
+                            </ul>
+                        </div>
+				    </li>
 					<li><a href="#" class="openAll1">DISNEY</a>
-
                         <div class="gnb_depth gnb_depth2_1">
+                            <ul class="submenu_list">
+                                <li><a href="https://www.instagram.com/disneykorea/" target="_blank">인스타그램</a></li>
+                                <li><a href="https://www.facebook.com/DisneyKorea" target="_blank">페이스북</a></li>
+                                <li><a href="https://www.youtube.com/DisneyChannelKorea" target="_blank">유튜브</a></li>
+                            </ul>
+                        </div>
+                        <div class="gnb_depth gnb_depth2_0">
                             <ul class="submenu_list">
                                 <li><a href="https://www.instagram.com/disneykorea/" target="_blank">인스타그램</a></li>
                                 <li><a href="https://www.facebook.com/DisneyKorea" target="_blank">페이스북</a></li>
@@ -44,6 +58,14 @@
                                 <li><a href="https://m.post.naver.com/my.nhn?memberNo=15200157">블로그</a></li>
                             </ul>
                         </div>
+                        <div class="gnb_depth gnb_depth2_0">
+                            <ul class="submenu_list">
+                                <li><a href="https://www.instagram.com/marvelkorea/">인스타그램</a></li>
+                                <li><a href="https://www.youtube.com/MarvelKorea">페이스북</a></li>
+                                <li><a href="https://www.youtube.com/MarvelKorea" target="_blank">유튜브</a></li>
+                                <li><a href="https://m.post.naver.com/my.nhn?memberNo=15200157">블로그</a></li>
+                            </ul>
+                        </div>
 					</li>
 					<li><a href="#" class="openAll3">STARWARS</a>
                         <div class="gnb_depth gnb_depth2_3">
@@ -53,14 +75,21 @@
                                 <li><a href="https://www.youtube.com/channel/UCGf-sXt1hwYeqLh9Y6m5obQ">유튜브</a></li>
                             </ul>
                         </div>
+                        <div class="gnb_depth gnb_depth2_0">
+                            <ul class="submenu_list">
+                                <li><a href="https://www.instagram.com/starwarskorea">인스타그램</a></li>
+                                <li><a href="https://www.facebook.com/starwars.kr">페이스북</a></li>
+                                <li><a href="https://www.youtube.com/channel/UCGf-sXt1hwYeqLh9Y6m5obQ">유튜브</a></li>
+                            </ul>
+                        </div>
 					</li>
-					<li><a href="#" class="openAll4">EVENT</a>
-                        <div class="gnb_depth gnb_depth2_4">
+					<li><a href="#" class="openAll4">EVENT</a> <span class="evt_btn"><img src="img/m/right-arrow.png" alt="evt_btn"></span>
+                       <!-- <div class="gnb_depth gnb_depth2_4">
                             <ul class="submenu_list">
                                 <li><a href="#">진행중인 이벤트</a></li>
                                 <li><a href="#">당첨자 발표</a></li>
                             </ul>
-                        </div>
+                        </div>-->
 					</li>
 				</ul>
                 </nav>
@@ -71,21 +100,21 @@
 	</header>
 	<section>
 	<div id="container">
-       <div class="mainimg">
-       <img src="img/85JWH6L3.jpg" alt="메리포핀스리턴즈" width="100%">
+        <div class="main_rolling_pc">
+           <div class="mainimg">
+               <img src="img/mainimg.jpg" alt="메리포핀스리턴즈" width="100%">
            <div class="mainimg-dc">
                 <a href="https://youtu.be/ZJEDQeeB8eo" class="btn-main-link">영상보기</a>
             </div>
-       </div>
-        <div class="main_rolling_pc">
+           </div>
             <div class="visualRoll">
                 <ul class="viewImgList">
                     <li class="imglist0">
                         <div class="roll_content">
                             <a href="#">
-                            <img src="img/bg-d.jpg" alt="Desney" width="100%"></a>
+                            <img src="img/m/bg-d_large.jpg" alt="Desney" width="100%"></a>
                             <p class="roll_txtline">
-                            <img src="img/logo-d.png" alt="Desney">
+                            <img src="img/logo-d.png" alt="Desney" class="logo">
                                 <a href="https://www.instagram.com/disneykorea/" target="_blank">인스타그램</a> |
                                 <a href="https://www.facebook.com/DisneyKorea" target="_blank">페이스북</a> |
                                 <a href="https://www.youtube.com/DisneyChannelKorea" target="_blank">유튜브</a>
@@ -95,9 +124,9 @@
                     <li class="imglist1">
                         <div class="roll_content">
                             <a href="#">
-                            <img src="img/bg-m.jpg" alt="MARVEL" width="100%"></a>
+                            <img src="img/m/bg-m_large.jpg" alt="MARVEL" width="100%"></a>
                             <p class="roll_txtline">
-                            <img src="img/logo-m.png" alt="MARVEL">
+                            <img src="img/logo-m.png" alt="MARVEL" class="logo">
                             <a href="https://www.instagram.com/marvelkorea/" target="_blank">인스타그램</a> |
                                <a href="https://www.facebook.com/marvel.kr" target="_blank">페이스북</a> |
                                <a href="https://www.youtube.com/MarvelKorea" target="_blank">유튜브</a> |
@@ -108,9 +137,9 @@
                     <li class="imglist2">
                         <div class="roll_content">
                             <a href="#">
-                            <img src="img/bg-s.jpg" alt="STARWARS" width="100%"></a>
+                            <img src="img/m/bg-s_large.jpg" alt="STARWARS" width="100%"></a>
                             <p class="roll_txtline">
-                            <img src="img/logo-s.png" alt="STARWARS">
+                            <img src="img/logo-s.png" alt="STARWARS" class="logo">
                                 <a href="https://www.instagram.com/starwarskorea" target="_blank">인스타그램</a> |
                                 <a href="https://www.facebook.com/starwars.kr" target="_blank">페이스북</a> |
                                 <a href="https://www.youtube.com/channel/UCGf-sXt1hwYeqLh9Y6m5obQ" target="_blank">유튜브</a>
@@ -130,17 +159,76 @@
                 </div><!-- //rollbtnArea -->
 
             </div><!-- //visualRoll -->
-        </div><!-- //main_rolling -->
+        </div><!-- //main_rolling_pc -->
+        
+        <div class="main_rolling_mobile">
+           <div class="mainimg">
+           <img src="img/m/mainimg.jpg" alt="메리포핀스리턴즈" width="100%">
+           <div class="mainimg-dc">
+                <a href="https://youtu.be/ZJEDQeeB8eo" class="btn-main-link">영상보기</a>
+            </div>
+       </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#"><img src="img/m/bg-d.jpg" alt="DISNEY"></a></a>
+                        <p class="swiper_txtline">
+                            <img src="img/m/logo-d.png" alt="Desney" class="logo">
+                                <a href="https://www.instagram.com/disneykorea/" target="_blank">인스타그램</a> |
+                                <a href="https://www.facebook.com/DisneyKorea" target="_blank">페이스북</a> |
+                                <a href="https://www.youtube.com/DisneyChannelKorea" target="_blank">유튜브</a>
+                            </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="img/m/bg-m.jpg" alt="MARVEL"></a></a>
+                        <p class="swiper_txtline">
+                            <img src="img/m/logo-m.png" alt="MARVEL" class="logo">
+                            <a href="https://www.instagram.com/marvelkorea/" target="_blank">인스타그램</a> |
+                               <a href="https://www.facebook.com/marvel.kr" target="_blank">페이스북</a> |
+                               <a href="https://www.youtube.com/MarvelKorea" target="_blank">유튜브</a> |
+                               <a href="https://m.post.naver.com/my.nhn?memberNo=15200157" target="_blank">블로그</a>
+                            </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="img/m/bg-s.jpg" alt="STARWARS"></a></a>
+                        <p class="swiper_txtline">
+                            <img src="img/logo-s.png" alt="STARWARS" class="logo">
+                                <a href="https://www.instagram.com/starwarskorea" target="_blank">인스타그램</a> |
+                                <a href="https://www.facebook.com/starwars.kr" target="_blank">페이스북</a> |
+                                <a href="https://www.youtube.com/channel/UCGf-sXt1hwYeqLh9Y6m5obQ" target="_blank">유튜브</a>
+                            </p>
+                    </div>
+                </div>						
+                <div class="swiper-pagination"></div>
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
+                
+            </div><!--//swiper-container-->
+        </div><!--//main_rolling_mobile -->
     </div>
     </section>
     <footer>
-        <p class="copyright"><img src="./img/logo-sm.png" alt="디즈니" class="logo"><span>©Disney ©Disney/Pixar ©MARVEL © &amp; ™ Lucasfilm Ltd.</span></p>
-        <ul>
+        <ul class="footer_gnb">
             <li><a href="#">회사 소개</a></li>
             <li><a href="#">채용</a></li>
             <li><a href="http://disneytermsofuse.com/korean" target="_blank">이용약관</a></li>
             <li><a href="https://disneyprivacycenter.com/privacy-policy-translations/korean/" target="_blank">개인정보보호정책</a></li>
         </ul>
+        <p class="copyright"><img src="./img/logo-sm.png" alt="디즈니" class="logo"><span>©Disney ©Disney/Pixar ©MARVEL © &amp; ™ Lucasfilm Ltd.</span></p>
+        
     </footer>
+    
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript">
+   $(document).ready(function(){
+		var swiper = new Swiper('.swiper-container', {
+			loop: true,
+			autoplay:5500,
+		    autoplayDisableOnInteraction: false,
+			pagination: '.swiper-pagination',
+            paginationClickable: true
+		});
+	});
+</script>
 </body>
 </html>
