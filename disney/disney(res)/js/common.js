@@ -172,7 +172,7 @@ $(document).ready( function() {
 	});	
     
 	//모바일 메뉴 띄움
-	$('.openMOgnb').click(function(){
+	/*$('.openMOgnb').click(function(){
 		$('header').addClass('on');
 		$('header .header_cont').slideDown('fast');
 		$('header .header_area .header_cont .closePop').show();			
@@ -182,8 +182,14 @@ $(document).ready( function() {
         $('.header_cont').slideUp('fast');
         $('header').removeClass('on');
         $("body").unbind('touchmove');
-	});
+	});*/
 	
+    $(".openMOgnb").click(function() {
+        $( "header .header_cont" ).toggle( "slide" );
+    });
+
+
+    
 });
 
 

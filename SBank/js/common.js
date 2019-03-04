@@ -135,7 +135,7 @@ $(document).ready(function() {
                     $(this).parent('li').find('.info').slideDown("fast");
 //                    $(this).parent('li .info').slideUp();
 				});
-				$('.info-group .list > li').bind('mouseout', function(ev){
+				$('.info-group .list > li').bind('mouseleave', function(ev){
                     $('.info-group .list > li').removeClass('on');
                     $('.info-group > .list > li.on a.tit').css("backgroud-image","../img/upload.png");
                      $('.info').hide();
