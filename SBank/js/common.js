@@ -129,8 +129,16 @@ $(document).ready(function() {
 
 				//이벤트설정
 				$('.info-group .list > li > a').bind('focus mouseover', function(ev){
-					$('.info-group .list > li').removeClass('on');
+					
 					$(this).parent('li').addClass('on');
+//                     $('.info').hide();
+                    $(this).parent('li').find('.info').slideDown("fast");
+//                    $(this).parent('li .info').slideUp();
+				});
+				$('.info-group .list > li').bind('mouseout', function(ev){
+                    $('.info-group .list > li').removeClass('on');
+                    $('.info-group > .list > li.on a.tit').css("backgroud-image","../img/upload.png");
+                     $('.info').hide();
 				});
 
 				//하위메뉴 타임연장

@@ -209,7 +209,7 @@ footer{}
 .info-group > .list > li:nth-child(4)>a{width:186px;}
 .info-group > .list > li:nth-child(5)>a{width:100px;}
 
-.info-group > .list > li.on .info {display:block;}
+/*.info-group > .list > li.on .info {display:block;}*/
 .info-group > .list > li.on a.tit {background:url('../img/upload.png') no-repeat 95% 50%; background-size: 10px 10px;}
 
 /****로그인화면****/
