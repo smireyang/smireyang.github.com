@@ -30,34 +30,12 @@ header{width: 100%; height: 60px; padding:20px 0; border-bottom: 1px solid #ccc;
 
 /*서브메뉴*/
 
-.subMenu {
-	position: absolute;
-    top:100px;
-    width: 100%;
-	height: 190px;
-	background: #fff;
-	border-top: 1px solid #ccc;
-	border-bottom: 1px solid #ccc;
-    z-index: 2;
-}
-.subMninner{
-    width: 1200px;
-    margin: 0 auto;
-}
-.subMn {
-    width: 705px;
-    float: right;
-	margin-top: 10px;
-}
-.subMn ul {
-	float: left;
-}
+.subMenu {position: absolute; top:100px; width: 100%; height: 190px; background: #fff; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; z-index: 2;}
+.subMninner{width: 1200px; margin: 0 auto;}
+.subMn {width: 705px; float: right; margin-top: 10px;}
+.subMn ul {float: left;}
 .subMn>ul.on{background:#dfdfdf;}
-.subMn ul li {
-	padding-top: 10px;
-	width: 78px;
-    text-align: center;
-}
+.subMn ul li {padding-top: 10px; width: 78px; text-align: center;}
 .subMn ul li a{font-size:14px;}
 .subMn ul.on{background:#f7f7f7;}
 
@@ -159,7 +137,7 @@ span.date{font-size: 13px; display: inline-block; position: absolute; right: 10p
 .botCont03 ul li a{font-size:15px; font-weight: bold; padding: 10px; display: block;}
 
 /*
-# 레이아웃 : FOOTER */
+FOOTER */
 footer{}
 /* FOOTER : 영역 */
 .footInner{border-top:1px solid #e5e5e5;}
@@ -232,48 +210,15 @@ section{clear: both;}
 .certForm{width: 49%; display: inline-block; vertical-align: middle;}
 .loginForm{width: 50%; display: inline-block; vertical-align: middle; box-sizing: border-box; }
 
-.certformInner {
-    position: relative;
-    padding: 33px 25px 29px;
-    background: #fff;
-    border: 1px solid #ddd;
-    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-    box-sizing:  border-box;
-    height: 330px;
-    margin: 2em 0;
-}
-.certTitle{margin: -25px -25px 25px;
-   padding: 15px 25px;
-   text-align: center;
-   background: #fff;
-    cursor:context-menu;}
+.certformInner {position: relative; padding: 33px 25px 29px; background: #fff; border: 1px solid #ddd;
+-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+box-sizing:  border-box; height: 330px; margin: 2em 0;}
+.certTitle{margin: -25px -25px 25px; padding: 15px 25px; text-align: center; background: #fff; cursor:context-menu;}
 
-.certButton {
-   position: relative;
-   vertical-align: top;
-   width: 100%;
-   height: 54px;
-   padding: 0;
-   font-size: 1.2em;
-   color: white;
-   text-align: center;
-   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-   background: #333;
-   border: 0;
-   border-bottom: 2px solid #666;
-   cursor: pointer;
-   -webkit-box-shadow: inset 0 -2px #666;
-   box-shadow: inset 0 -2px #666;
-    margin-bottom: 3%;
-}
+.certButton {position: relative;vertical-align: top; width: 100%; height: 54px; padding: 0; font-size: 1.2em; color: white; text-align: center; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25); background: #333;
+border: 0; border-bottom: 2px solid #666; cursor: pointer; -webkit-box-shadow: inset 0 -2px #666; box-shadow: inset 0 -2px #666; margin-bottom: 3%;}
 
-.certButton:active {
-   top: 1px;
-   outline: none;
-   -webkit-box-shadow: none;
-   box-shadow: none;
-}
+.certButton:active {top: 1px; outline: none; -webkit-box-shadow: none; box-shadow: none;}
 
 .certCenter .part1{margin-top:1em; text-align: center; border-top: 1px solid #ddd; padding-top: 1em;}
 .certCenter .part1 a{display: block; width: 150px; margin: 0 auto;}
@@ -281,78 +226,19 @@ section{clear: both;}
 .certCenter .part1 span{vertical-align: middle;}
 .certCenter .part2{width: 55%; margin: 1em auto; background: #f7f7f7; padding: 1em;}
 .certCenter .part2 li{display: inline-block;}
-.loginForm .login {
-   position: relative;
-   width: 90%;
-   padding: 33px 25px 29px;
-   background: #fff;
-    border: 1px solid #ddd;
-   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-    margin: 1em 0;
-}
-
-.loginForm .loginTitle {
-   margin: -25px -25px 25px;
-   padding: 15px 25px;
-   text-align: center;
-   background: #fff;
-    cursor:context-menu;
-}
-
-.loginForm input {
-   font-family: inherit;
-   color: inherit;
-   -webkit-box-sizing: border-box;
-   -moz-box-sizing: border-box;
-   box-sizing: border-box;
-}
+.loginForm .login {position: relative; width: 90%; padding: 33px 25px 29px; background: #fff; border: 1px solid #ddd; -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25); margin: 1em 0;}
+.loginForm .loginTitle {margin: -25px -25px 25px; padding: 15px 25px; text-align: center; background: #fff; cursor:context-menu;}
+.loginForm input {font-family: inherit; color: inherit; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 .login span{width:32.5%; display: inline-block;}
 .login span a{color:#333;}
 .login span:nth-child(2n){text-align: center;}
 .login span:last-child{text-align: right;}
-.loginInput {
-   width: 100%;
-   height: 50px;
-   margin-bottom: 15px;
-   padding: 0 15px 2px;
-   font-size: 1em;
-   background: white;
-}
-
-.loginInput:focus {
-   border-color: #aaa;
-}
-
-.lt-ie9 .loginInput {
-   line-height: 48px;
-}
-
-.login .loginButton{
-   position: relative;
-   vertical-align: top;
-   width: 100%;
-   height: 54px;
-   padding: 0;
-   font-size: 1.2em;
-   color: white;
-   text-align: center;
-   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-   background: #333;
-   border: 0;
-   border-bottom: 2px solid #666;
-   cursor: pointer;
-   -webkit-box-shadow: inset 0 -2px #666;
-   box-shadow: inset 0 -2px #666;
-    margin-bottom: 3%;
-}
-
-.loginButton:active {
-   top: 1px;
-   outline: none;
-   -webkit-box-shadow: none;
-   box-shadow: none;
-}
+.loginInput {width: 100%; height: 50px; margin-bottom: 15px; padding: 0 15px 2px; font-size: 1em;   background: white;}
+.loginInput:focus {border-color: #aaa;}
+.lt-ie9 .loginInput {line-height: 48px;}
+.login .loginButton{position: relative; vertical-align: top; width: 100%; height: 54px; padding: 0; font-size: 1.2em; color: white; text-align: center; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+background: #333; border: 0; border-bottom: 2px solid #666; cursor: pointer; -webkit-box-shadow: inset 0 -2px #666; box-shadow: inset 0 -2px #666; margin-bottom: 3%;}
+.loginButton:active {top: 1px; outline: none; -webkit-box-shadow: none; box-shadow: none;}
 
 .bankingBot{margin-top: 1em; margin-bottom: 1em;}
 .bankingBot p:first-child{margin-bottom: 0.5em;}
