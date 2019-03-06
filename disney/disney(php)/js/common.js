@@ -177,18 +177,21 @@ $(document).ready( function() {
 		$('header .header_cont').slideDown('fast');
 		$('header .header_area .header_cont .closePop').show();			
 		$("body").bind('touchmove', function(e){e.preventDefault()});
-	});
+	});*/
+    
 	$('header .header_cont .closePop').click(function(){
-        $('.header_cont').slideUp('fast');
+        //$('.header_cont').slideUp('fast');
+        $( "header .header_cont" ).toggle( "slide" );
         $('header').removeClass('on');
         $("body").unbind('touchmove');
-	});*/
-	
+        $('.openMOgnb').show();
+	});
+    
     $(".openMOgnb").click(function() {
         $( "header .header_cont" ).toggle( "slide" );
+        $(this).css("display","none");
+        $('.closePop, .closePop a').css("display","block");
     });
-
-
     
 });
 
@@ -199,7 +202,11 @@ $(document).ready(function(){
         if ( parseInt($('header').css('width')) > 800 ) $('.header_cont').show();
     }); 
     
-    // 프로그램 소개 - 더보기/접기 작동
+    $(window).resize(function() {
+        if ( parseInt($('header').css('width')) < 800 ) $('.header_cont').hide();
+    }); 
+    
+    /* 더보기/접기 작동
 	$('.program_list li .btn_more a').click(function(){
 		if ($(this).parent().parent().find('.subtxt').css('display') == 'none') {
 			$(this).parent().parent().find('.subtxt').css('display','inline');
@@ -208,6 +215,6 @@ $(document).ready(function(){
 			$(this).parent().parent().find('.subtxt').css('display','none');
 			$(this).text('더보기');
 		}
-	});
+	});*/
    
 });
