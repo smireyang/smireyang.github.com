@@ -1,0 +1,146 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: font1, NIXGONM-Vb;
+    box-sizing: border-box;
+    transition: all 0.3s;
+    color: #333;
+    font-weight: bold;
+}
+
+.red{color:#EA4D6C;}
+.yellow{color:#f6c91a;}
+.blue{color: #0BC6E8;}
+.gray{color:#666;}
+
+@font-face {
+    font-family: "font1";
+    src: url('../font/NIXGONFONTS M 2.0.OTF') format('opentype');
+}
+
+@font-face { font-family: 'NIXGONM-Vb'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+header {
+    
+}
+
+.logo {width: 50%; margin: 0.8em auto; text-align: center; font-size: 1.7em;}
+
+/*햄버거 버튼*/
+.nav{position: absolute; top:1em; right:1em;}
+/*.nav .fas{font-size:1.7em;}*/
+.page-nav{position: relative; z-index: 2;}
+.page-nav>aside{background: rgba(255,255,255,1); width:100%; height: 100%; position: fixed; top:0;right:-100%;/*메뉴숨기기*/}
+/*img{border:none;}*/
+/*.page-nav>aside ul{margin:0; padding:0; position: absolute; top:0px;}
+.page-nav>aside li{background: #ccc; list-style: none;}*/
+
+/*전체메뉴*/
+
+/*top*/
+.nav{font-size:23px;}
+
+.allMenuTop {width:100%; height:10px; height: 3em; padding-top:1.6rem; box-sizing:border-box;}
+.allMenuTop h3{text-indent: 20px; float: left; margin-right: 10px; vertical-align: middle;}
+.allMenuTop a {display:inline-block; position:relative;}
+
+.allMenuTop .allMenuUtil {margin-top:1.6rem; padding-left:3rem; /*border-top:0.1rem solid #eee; border-bottom:0.1rem solid #eee;*/ background: #333;}
+.allMenuTop .allMenuUtil a {width: 26%; margin: 0 1%; text-align: center; padding:1.1em 0; font-size:1rem; color:#fff;}
+.allMenuTop .allMenuUtil a:first-child {margin-left:0;}
+.allMenuTop .allMenuUtil a:before {left:0; top:1.1rem; height:1.6rem;}
+
+.allMenuTop .login-btn a button{margin-top: -5px; background: #fff; border: 1px solid #888; border-radius: 8px; padding: 7px 10px; cursor: pointer; font-size: 11px;}
+
+/*allMenu*/
+ul.allMenuList li a.selected{color:red; cursor:default; border-top: 1px solid #eee;  border-bottom:1px solid #eee; background: #fff;}
+
+.allMenuArea {overflow:hidden; overflow-y:auto; position:absolute; top:8em; bottom:0; width:100%; background:#fff;}
+/*.allMenuArea:before {left:0; top:0; bottom:0; width:8rem; background:#ccc; z-index:1;}*/
+.allMenuArea .allMenuList {position:absolute; left:0; width:8rem; height:100%; z-index:2; border-right: 1px solid #eee;}
+.allMenuArea .allMenuList li {width:8em; height:6.75em; background:#f7f7f7; text-align:center;}
+.allMenuArea .allMenuList li img{width: 45px;}
+.allMenuArea .allMenuList a {display:block; position:relative; height:6.75rem; padding-top:1rem; font-size:1rem; box-sizing:border-box;}
+/*.allMenuArea .allMenuList li.dream a {padding-top:0rem;}*/
+/*.allMenuArea .allMenuList li.on {background: #fff;}
+.allMenuArea .allMenuList li.on a {color:red;}*/
+.allMenuArea .allMenuList li a:before {left:50%; top:1.5rem; width:2.2rem; height:2.5rem; margin-left:-1.1rem;}
+.allMenuArea .allMenuSub {overflow:hidden; overflow-y:auto; position:absolute; left:0; top:0; right:0; background:#fff;}
+.allMenuArea .allMenuSub:before {left:0; top:0; bottom:0; width:8rem; background:#f4f1ed; z-index:1;}
+.allMenuCon {width:100%; padding:2rem 0 2rem 10rem; background:#fff; box-sizing:border-box;}
+.allMenuCon h2 {color:#000; font-size:1rem; font-weight:bold;}
+.allMenuCon > div {margin-top:1.5rem; margin-right:2rem; border-top:0.1rem solid #000;}
+.allMenuCon > div > a {display: block; border-bottom:0.1rem solid #e5e5e5; position:relative; padding:1rem 1.5rem; color:#000; font-size:0.9rem; box-sizing:border-box;}
+/*.allMenuCon > dl > dt a{display:block; border-bottom:0.1rem solid #e5e5e5; position:relative; padding:1rem 1.5rem; color:#000; font-size:1rem; box-sizing:border-box;}
+.allMenuCon div dl dd{display: none; padding:1rem 0; border-top:0.1rem solid #e5e5e5;}
+.allMenuCon div dl dd a {display:none; position:relative; padding:0.8rem 1.5rem 0.9rem 2.8rem; color:#444;}*/
+/*.allMenuCon li.on ul {display:block;}
+.allMenuCon li.on > a {font-weight:bold;}*/
+
+/*슬라이드배너*/
+.mb_ixVisual{width: 100%; height: 200px; margin: 0px auto; position: relative; overflow: hidden;}
+
+.mb_visualImg1, .mb_visualImg2{width:50%; height: 200px; float:left;}
+.mb_sliderVisual{width:200%; height: 200px;}
+.mb_prevbtn{position: absolute; top:80px; cursor: pointer; z-index: 1;}
+.mb_nextbtn{position: absolute; top:80px; right: 0px; cursor: pointer; z-index: 1;}
+.mb_prevbtn img, .mb_nextbtn img{width: 30px;}
+.mb_prevbtn .fas, .mb_nextbtn .fas{font-size:50px; color:#e7e7e7;}
+
+.mb_visualImg1, .mb_visualImg2{position: relative; text-align: center;}
+.mb_visualImg1{padding:20px 0;}
+.mb_visualImg1 img{height: 90%; display: inline-block;}
+.mb_visualImg1_text{width: 32%; display: inline-block; vertical-align: top; margin-top: 40px; text-align: left; font-size: 15px; line-height: 20px;}
+.mb_visualImg2{padding:20px 0;}
+.mb_visualImg2 img{height: 90%; display: inline-block;}
+.mb_visualImg2_text{width: 50%; display: inline-block; vertical-align: top; margin-top: 40px; text-align: left; font-size: 15px; line-height: 20px;}
+
+/*탭메뉴*/
+ul.tab{}
+ul.tab li{list-style: none; width:25%; float:left;}
+ul.tab li a{display: block; color:#000; line-height: 4em; text-align: center; text-decoration: none; border-top:1px solid #999; border-bottom:1px solid #999; font-size: 0.9em;}
+ul.tab li:last-child a{}
+ul.tab li a.selected{color:#EA4D6C; cursor:default; border-bottom:none;  border-bottom:1px solid #999;}
+ul.panel{clear: both; padding: 0;}
+ul.panel li{padding: 30px 0px;}
+
+/*Easy-banking*/
+.Easy-banking, .financial-product{width: 85%; margin: 0 auto;}
+.Easy-banking a, .financial-product a{border: 1px solid #ddd; padding:2%; width: 31.9%; display: inline-block; text-align: center; box-sizing: border-box; font-size:14px;}
+.Easy-banking a:nth-child(4), .financial-product a:nth-child(4){margin-top: 5px;}
+.Easy-banking .fas, .Easy-banking .far{display: block; font-size: 30px; margin-bottom: 10px;}
+.Easy-banking img{width: 30px; vertical-align: middle; display: block; margin: 0 auto; margin-bottom: 10px;}
+
+/*financial-product*/
+.financial-product .fas{display: block; font-size: 30px; margin-bottom: 10px;}
+.financial-product img{width: 30px; vertical-align: middle; display: block; margin: 0 auto; margin-bottom: 10px;}
+
+/*exchange-rate-report*/
+.exchange-rate-report{font-size: 15px; width: 85%; margin: 0 auto;}
+.exchange-rate-report img{width: 20px; margin-right: 5px; vertical-align: middle;}
+.exchange-rate-report div:nth-child(1){float: left; width: 50%;}
+.exchange-rate-report div:nth-child(3),.exchange-rate-report div:nth-child(5){width: 52%; display: inline-block;}
+.exchange-rate-report div:nth-child(4),.exchange-rate-report div:nth-child(6){width: 45%; display: inline-block;}
+.exchange-rate-report div:nth-child(5),.exchange-rate-report div:nth-child(6){margin-top: 15px;}
+.exchange-rate-report .title{margin-bottom: 20px;}
+.exchange-rate-report span.date{font-size: 12px; float: right; color: #777;}
+.exchange-rate-report span{font-size: 12px; margin-right: 5px;}
+
+/*news*/
+
+.news{width: 94%; margin: 0 auto; position: relative;}
+.news h3{font-size: 15px; padding-bottom: 15px;}
+.news a{font-size:11px; line-height: 22px; display: inline-block;}
+.news span.date{font-size: 11px; float: right; color: #777; margin-top: 0.5em;}
+.btnMore{position: absolute; top:25px; right: 0px; text-align: right;}
+
+/*footer*/
+
+footer {position: relative; width: 100%; background-color: #fff; text-align: center; font-size: 13px; border-top:1px solid #999; padding-top: 20px;}
+footer ul li{display: inline-block;}
+.footer_link{margin-bottom: 15px;}
+.footer_link2{margin-bottom: 20px;}
+.footer_link2 li{border: 1px solid #666; padding: 5px 8px; border-radius: 10px;}
+.footer_copy{font-size: 11px;}
+.footer_copy p{color:#aaa;}
