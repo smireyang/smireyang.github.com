@@ -227,5 +227,9 @@ $(document).ready(function() {
             return false;
     });
     
+    //로딩
+    window.onload = function() {
+            document.getElementById("loading").style.display = "none"
+        }
 });
     

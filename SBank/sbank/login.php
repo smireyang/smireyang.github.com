@@ -47,5 +47,8 @@
         <?php include 'footer.php' ?>
     </footer>
     <!-- // ### footer ### end -->
+    <div id="loading">
+        <img id="loading-img" src="img/loading.gif" alt="Loading..." />
+    </div>
 </body>
 </html>
