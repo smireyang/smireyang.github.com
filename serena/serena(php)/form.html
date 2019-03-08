@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>form</title>
+		<meta name="description" content="">
+		<meta name="author" content="hu">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	</head>
+
+	<body>
+		<form action="#" method="post">
+			<fieldset>
+				<legend>회원가입</legend>
+				<p>아이디 : <input type="text" size="12" maxlength="8" /></p>
+				<p>패스워드 : <input type="password" size="12" maxlength="8" /></p>
+				<p>메일수신여부 : 
+					<input type="radio" value="y" name="receive" />예
+					<input type="radio" value="n" name="receive" />아니요
+					</p>
+				<p>관심분야 : 
+					<input type="checkbox" value="HTML" name="chk1" />HTML
+					<input type="checkbox" value="CSS" name="chk2" />CSS
+					<input type="checkbox" value="javascript" name="chk3" />javascript
+				</p>
+				<p>
+					<input type="submit" value="전송" />
+					<input type="reset" value="취소" />
+					<input type="button" value="확인" />
+					<input type="image" src="d.png" alt="검색" />
+				</p>
+				<p>파일 올리기 : <input type="file" /></p>
+				<p><input type="hidden" /></p>
+				<p>
+					답글 : <br>
+					<textarea cols="30" rows="3" name="reply"></textarea>
+				</p>
+				<p>과목선택
+					<select>
+					<option value="html5">html5</option>
+					<option value="css3">css3</option>
+					<option value="jquery">jquery</option>
+					</select>
+				</p>
+				<p>
+					<select>
+						<optgroup label="서북구">
+							<option value="두정동">두정동</option>
+							<option value="쌍용동">쌍용동</option>
+							<option value="백석동">백석동</option>
+						</optgroup>
+						<optgroup label="동남구">
+							<option value="신부동">신부동</option>
+							<option value="성황동">성황동</option>
+							<option value="성성동">성성동</option>
+						</optgroup>
+					</select>
+				</p>
+			</fieldset>
+		</form>
+		<h1>label 태그</h1>
+		<form action="#" method="post">
+			<fieldset>
+				<legend>회원가입</legend>
+				<table border="1">
+					<tr>
+						<td><label for="name">이름</label></td>
+						<td><input type="text" id="name"></td>
+					</tr>
+					<tr>
+						<td><label for="id">아이디</label></td>
+						<td><input type="text" id="id" /></td>
+					</tr>
+					<tr>
+						<td><label for="pass">패스워드</label></td>
+						<td><input type="password" id="pass"/></td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="r_pw">비밀번호확인</label></th>
+						<td><input type="password" id="r_pw" /></td>
+					</tr>
+					<tr>
+						<td><label for="jumin_num">주민번호</label></td>
+						<td><input type="text" id="jumin_num" title="주민번호 앞 6자리" />-<input type="text" title="주민번호 뒤 7자리" /></td>
+					</tr>
+				</table>
+			</fieldset>
+		</form>
+		<h1>그룹핑</h1>
+		<div>
+			<ul>
+				<li>회사소개</li>
+				<li>오시는길</li>
+			</ul>
+		</div>
+		<h2>span 태그</h2>
+		<ul>
+			<li><span><a href="#">오늘의 book</a></span>html5와 css3</li>
+		</ul>
+		
+		<div id="wrap">
+			<div id="skipnav">
+				<a href="#">컨텐츠바로가기</a>
+			</div>
+			<div id="header">
+				<h1>아이콕스</h1>
+				<h2>메인메뉴</h2>
+				<div id="gnb">
+					<ul>
+						<li><a href="#">아이콕스</a></li>
+						<li><a href="#">도서소개</a></li>
+						<li><a href="#">커뮤니티</a></li>
+						<li><a href="#">자료실</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="contentwrap">
+				<div id="left">
+					<h2>왼쪽컨텐츠</h2>
+					<p>내용</p>
+				</div>
+				<div id="right">
+					<h2>오른쪽컨텐츠</h2>
+					<p>내용</p>
+				</div>
+			</div>
+			<div id="footer">
+				<address>서울시 양천구 목1동 현대드림타워</address>
+			</div>
+		</div>
+	</body>
+</html>

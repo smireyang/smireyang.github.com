@@ -49,6 +49,7 @@
     <!-- // ### footer ### end -->
     <div id="loading">
         <img id="loading-img" src="img/loading.gif" alt="Loading..." />
+        <p>로딩중입니다....</p>
     </div>
 </body>
 </html>
