@@ -9,7 +9,7 @@ foreach($_POST as $key =>$value){
 }
 
     if(!$nick){
-        echo"닉네임을 입력하세요!!";
+        echo"닉네임을 입력하세요.";
     }else{
         include "../lib/dbconn.php";
         
@@ -20,7 +20,7 @@ foreach($_POST as $key =>$value){
         $num_record=mysql_num_rows($result);
         
         if($num_record){
-            echo"닉네임이 중복됩니다.!<br>";
+            echo"닉네임이 중복됩니다!<br>";
             echo"다른 닉네임을 사용하세요.<br>";
         }
         else{

@@ -50,6 +50,7 @@ html,body {
     padding-right: 4%;
     box-shadow: 10px 10px 20px rgba(0,0,0,0.3);
     z-index: 1;
+    background: rgba(255,255,255,0.7);
 }
 
 #img_area{
@@ -145,8 +146,8 @@ html,body {
 	transition: opacity 0.35s, transform 0.35s;
 	-webkit-transform: translate3d(10px,10px,0);
 	transform: translate3d(10px,10px,0);
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
+	/*-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;*/
 }
 
 .effect_1 figcaption::before,
@@ -324,8 +325,8 @@ div.effect_1 h1 {
 	position: absolute;
 	top: 0;
 	left: 0;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
+	/*-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;*/
 	-webkit-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
 	-webkit-transform-style: preserve-3d;
@@ -386,8 +387,8 @@ div.effect_1 h1 {
 	padding: 2em;
 	color: #fff;
 	font-size: 1.25em;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
+	/*-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;*/
 }
 .grid div figcaption h1{color:#fff; z-index: 1;}
 
@@ -491,7 +492,7 @@ span.gray{color:dimgray !important; font-size:0.8em !important;}
     position: absolute;
     top:-20px;
     width: 100%;
-    background: #fff;
+/*    background: #fff;*/
 }
 
 .effect_2 img {
@@ -499,8 +500,8 @@ span.gray{color:dimgray !important; font-size:0.8em !important;}
 	width: 100%;
 	-webkit-transition: opacity 1s, -webkit-transform 1s;
 	transition: opacity 1s, transform 1s;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
+	/*-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;*/
 }
 .effect_2:nth-child(2)>img{height: 38em;}
 
@@ -729,7 +730,7 @@ span.gray{color:dimgray !important; font-size:0.8em !important;}
 .effect_3:hover p {
 	opacity: 1;
 	-webkit-transform: translate3d(-0%,-35%,0);
-	transform: translate3d(-10%,-20%,0);
+	transform: translate3d(-10%,-0%,0);
 }
 
 .effect_3:hover img {
@@ -751,8 +752,8 @@ span.gray{color:dimgray !important; font-size:0.8em !important;}
 	transition: opacity 0.35s, transform 0.35s;
 	-webkit-transform: translate3d(10px,10px,0);
 	transform: translate3d(10px,10px,0);
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
+	/*-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;*/
 }
 
 div.effect_3_1:hover{
@@ -955,7 +956,6 @@ textarea{
 	margin-left: 0;
     font-weight: normal;
 }
-textarea{padding-top: 0.5em; margin-bottom: 0.2em;}
 #name,
 #tel{
 	width:100%;
@@ -974,6 +974,8 @@ textarea{
 	width:100%;
 	height: 12em;
 	border: 1px solid #eee;
+    padding-top: 0.5em;
+    margin-bottom: 0.2em;
 }
 #submit{
 	width:100%;

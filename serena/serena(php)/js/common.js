@@ -146,7 +146,7 @@ $(function () {
 	});
 	
     //login
-    $("dd").hide();
+    $(".login dd").hide();
 			$("body").append("<div id='glayLayer'></div><div id='overLayer'></div>");
 			
 			$("#glayLayer").click(function(){
@@ -154,7 +154,7 @@ $(function () {
 				$("#overLayer").hide();
 			});
 			
-			$("dt").click(function(){
+			$(".login dt").click(function(){
 				$("#glayLayer").show();
 				$("#overLayer").show().html("<img src='images/close.png' class='close' />"+$("+dd",this).html()).css({
 					marginTop:"-"+$("#overLayer").height()/2+"px" , 

@@ -1,0 +1,229 @@
+<?php session_start(); 
+foreach($_GET as $key =>$value){
+	${$key}=$value;
+}
+foreach($_POST as $key =>$value){
+	${$key}=$value;
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <? include 'head.php' ?>
+</head>
+
+<body>
+    <div class="top">
+        <? include 'top.php' ?>
+    </div>
+    <header>
+        <div class="header-inner">
+            <div class="logo">
+                <a href="index.php">
+                    <h1>Serena</h1><span>®</span>
+                </a>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">Clothing</a></li>
+                    <li><a href="#">Handbags</a></li>
+                    <li><a href="#">Shoes</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Sale</a></li>
+                </ul>
+            </div>
+            <div class="searchbar">
+                <form>
+                    <input type="text" class="input-search" />
+                    <button>
+                        <!--<i class="fas fa-search"></i>--> <img src="images/search.png" alt="search"></button>
+                </form>
+            </div>
+        </div>
+        <div class="sub-navi">
+                <div class="wrap">
+                    <div class="sub-menu">
+                        <ul class="sub sub1">
+                            <li><a href="#">Outer</a></li>
+                            <li><a href="#">Ops</a></li>
+                            <li><a href="#">Top</a></li>
+                            <li><a href="#">Bottom</a></li>
+                        </ul>
+                        <ul class="sub sub2">
+                            <li><a href="#">Clutch</a></li>
+                            <li><a href="#">Satchel</a></li>
+                            <li><a href="#">Tote</a></li>
+                            <li><a href="#">Shoulder</a></li>
+                        </ul>
+                        <ul class="sub sub3">
+                            <li><a href="#">Flat</a></li>
+                            <li><a href="#">Sneakers</a></li>
+                            <li><a href="#">Boots</a></li>
+                        </ul>
+                        <ul class="sub sub4">
+                            <li><a href="#">Earring</a></li>
+                            <li><a href="#">Necklace</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <div class="message">
+           <div class="message-inner">
+            <a href="#">
+                <h5>무료 배송 & 무료 선물포장 서비스 I 자세히 보기</h5>
+            </a>
+            <a href="#">
+                <h5>소중한 사람을 위한 기프트 5% 할인 코드: SRGIFT2019ㅣ자세히 보기</h5>
+            </a>
+            <a href="#">
+                <h5>온라인 단독 상품 최대 40% 세일!(기존 30%+추가10%) I 바로가기</h5>
+            </a>
+        </div>
+        </div>
+    <section>
+        <div class="product-display">
+            <div class="page-path"><a href="index.php" class="home-path">Home</a>><a href="#" style="color:#0c2340; text-decoration-line:line-through;">Clothing</a></div>
+            <div class="product-filter">
+                    <!-- sort-box -->
+                    <div class="sort-box">
+                        <a href="#" class="sort-title">속성</a>
+                        <!-- attr-wrap -->
+                        <div class="attr-wrap" style="display: none;">
+                            <div class="attr-list">
+                                <ul>
+                                    <li> <strong>STYLE</strong>
+                                        <ul>
+                                            <li>
+                                                <label class="ip-chkbox">
+                                                    <input type="checkbox" class="sortcb"><label for="sortcb"></label> sleeveless
+                                                </label> </li>
+                                            <li>
+                                                <label class="ip-chkbox">
+                                                    <input type="checkbox" class="sortcb"><label for="sortcb"></label> formal
+                                                </label> </li>
+                                            <li>
+                                                <label class="ip-chkbox">
+                                                    <input type="checkbox" class="sortcb"><label for="sortcb"></label> long-sleeve
+                                                </label> </li>
+
+                                        </ul>
+                                    </li>
+                                    <!-- 추가 속성 -->
+                                </ul>
+                            </div>
+                            <div class="btn-wrap">
+                                <button type="button" value="submit" class="btn">적용하기</button>
+                               <!-- <button type="button" value="reset" class="btn clear">선택 모두 해제</button>-->
+                            </div>
+                            <a href="#" class="close">닫기</a>
+                        </div>
+                        <!-- //attr-wrap -->
+                    </div>
+                    <!-- //sort-box -->
+                    <!-- sort-box -->
+                    <div class="sort-box">
+                        <a href="#" class="sort-title">정렬</a>
+                        <div class="range" style="display: none;">
+                            <ul>
+                                <li><a href="#">MD추천순</a></li>
+                                <li><a href="#">신상품순</a></li>
+                                <li><a href="#">판매수량순</a></li>
+                                <li><a href="#">낮은가격순</a></li>
+                                <li><a href="#">높은가격순</a></li>
+                            </ul>
+                            <input type="hidden">
+                            <a href="#" class="close">닫기</a>
+                        </div>
+                    </div>
+                    <!-- //sort-box -->
+                    <!-- view-wrap -->
+                    <ul class="view-wrap">
+                        <li class="col4-size"><a href="#"><i class="fas fa-th"></i></a></li>
+                        <li class="col2-size"><a href="#"><i class="fas fa-th-large"></i></a></li>
+                        <input type="hidden">
+                    </ul>
+                    <!-- //view-wrap -->
+                </div>
+            <ul class="clothing">
+                <li><a href="view.php"><img src="images/clothing1.jpg" alt="clothing1">
+                        <div class="product-display-dc">
+                            <p>Detail-view</p>
+                            <p>Coat</p>
+                            <p>170,000</p>
+                        </div>
+                    </a></li>
+                <li><a href="view.php"><img src="images/clothing2.jpg" alt="clothing2">
+                    <div class="product-display-dc">
+                        <p>Detail-view</p>
+                        <p>Dress</p>
+                        <p>130,000</p>
+                    </div>
+                    </a></li>
+                <li><a href="view.php"><img src="images/clothing3.jpg" alt="clothing3">
+                    <div class="product-display-dc">
+                        <p>Detail-view</p>
+                        <p>Ops</p>
+                        <p>110,000</p>
+                    </div>
+                    </a></li>
+                <li><a href="view.php"><img src="images/clothing4.jpg" alt="clothing4">
+                    <div class="product-display-dc">
+                        <p>Detail-view</p>
+                        <p>Blouse</p>
+                        <p>90,000</p>
+                    </div>
+                    </a></li>
+                <li><a href="view.php"><img src="images/clothing5.jpg" alt="clothing5">
+                    <div class="product-display-dc">
+                        <p>Detail-view</p>
+                        <p>Tee</p>
+                        <p>50,000</p>
+                    </div>
+                    </a></li>
+                <li><a href="view.php"><img src="images/clothing6.jpg" alt="clothing6">
+                    <div class="product-display-dc">
+                        <p>Detail-view</p>
+                        <p>Blouse</p>
+                        <p>80,000</p>
+                    </div>
+                    </a></li>
+            </ul>
+        </div>
+        <a href="#"><div class="page-more">More</div></a>
+        <div class="scroll-up"><a href="#header-wrap" title="Top"><i class="far fa-caret-square-up"></i></a></div>
+    </section>
+    <footer>
+        <div class="foot-inner">
+            <div class="customer">
+            <h2><i class="fas fa-mobile-alt"></i> 1599-0000</h2>
+                <p>OPEN PM 1:00 - PM 5:00 SAT/SUN/HOLIDAY OFF</p>
+            </div>
+            <!-- company-info -->
+            <div class="company-info">
+                <address>
+                    <span>세레나<span>®</span></span>
+                    <span>서울특별시 강남구</span> <span>대표 김예나</span><br>
+                    사업자 등록번호 101-00-00000 <span>통신판매업 신고번호 제 2019-서울강남-00000</span>
+                </address>
+                <p>© 2019 Serena All rights reserved.</p>
+            </div>
+            <!-- //company-info -->
+            <div class="mark">
+                <a href="#"><img src="images/mark.gif" alt="mark1"></a>
+                <p>
+				고객님의 안전거래를 위해 현금성 결제 시 저희 쇼핑몰에서 가입한 구매안전(에스크로) 서비스를 이용하실 수 있습니다.
+				</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+
+<!--남색 #0079C1
+하늘색 #A8CDE0
+핑크 #F1677E

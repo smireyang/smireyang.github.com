@@ -9,7 +9,7 @@ foreach($_POST as $key =>$value){
 }
 
     if(!$id){
-        echo"아이디를 입력하세요!!";
+        echo"아이디를 입력하세요.";
     }else{
         include "../lib/dbconn.php";
         
@@ -18,7 +18,7 @@ foreach($_POST as $key =>$value){
         $num_record=mysql_num_rows($result);
         
         if($num_record){
-            echo"아이디 중복됩니다.!<br>";
+            echo"아이디 중복됩니다!<br>";
             echo"다른 아이디를 사용하세요.<br>";
         }
         else{

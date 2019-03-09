@@ -23,33 +23,7 @@ foreach($_POST as $key =>$value){
 
 <body>
     <div class="top">
-        <div class="top-inner">
-            <div class="top-left"><a href="#"><i class="fas fa-map-marker-alt"></i> 매장안내</a></div>
-            <dl>
-              <?
-                if(!$userid)
-                {
-                ?>
-               <div class="login">
-                <dt><a href="#">로그인</a></dt>
-                <dd> <? include 'login/login-form.php' ?> </dd>
-                <a href="./member/member_form.php">회원가입</a> <a href="#">마이 페이지</a> <a href="#"><i class="far fa-heart"></i></a>
-                <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                </div>
-                <?
-                }else
-                {
-                ?>
-                <div class="login">
-                <a href="./login/logout.php">로그아웃</a>
-                <a href="#">마이 페이지</a> <a href="#"><i class="far fa-heart"></i></a>
-                <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                </div>
-                <?
-                }
-                ?>
-            </dl>
-        </div>
+        <? include 'top.php' ?>
     </div>
     <header>
         <div class="header-inner">
@@ -79,25 +53,25 @@ foreach($_POST as $key =>$value){
                 <div class="wrap">
                     <div class="sub-menu">
                         <ul class="sub sub1">
-                            <li><a href="sub.html">Outer</a></li>
-                            <li><a href="sub.html">Ops</a></li>
-                            <li><a href="sub.html">Top</a></li>
-                            <li><a href="sub.html">Bottom</a></li>
+                            <li><a href="sub.php">Outer</a></li>
+                            <li><a href="sub.php">Ops</a></li>
+                            <li><a href="sub.php">Top</a></li>
+                            <li><a href="sub.php">Bottom</a></li>
                         </ul>
                         <ul class="sub sub2">
-                            <li><a href="sub.html">Clutch</a></li>
-                            <li><a href="sub.html">Satchel</a></li>
-                            <li><a href="sub.html">Tote</a></li>
-                            <li><a href="sub.html">Shoulder</a></li>
+                            <li><a href="sub.php">Clutch</a></li>
+                            <li><a href="sub.php">Satchel</a></li>
+                            <li><a href="sub.php">Tote</a></li>
+                            <li><a href="sub.php">Shoulder</a></li>
                         </ul>
                         <ul class="sub sub3">
-                            <li><a href="sub.html">Flat</a></li>
-                            <li><a href="sub.html">Sneakers</a></li>
-                            <li><a href="sub.html">Boots</a></li>
+                            <li><a href="sub.php">Flat</a></li>
+                            <li><a href="sub.php">Sneakers</a></li>
+                            <li><a href="sub.php">Boots</a></li>
                         </ul>
                         <ul class="sub sub4">
-                            <li><a href="sub.html">Earring</a></li>
-                            <li><a href="sub.html">Necklace</a></li>
+                            <li><a href="sub.php">Earring</a></li>
+                            <li><a href="sub.php">Necklace</a></li>
                         </ul>
                     </div>
                 </div>
@@ -133,28 +107,28 @@ foreach($_POST as $key =>$value){
         <div class="product">
             <ul class="clothing">
                 <h2>Clothing</h2>
-                <a href="sub.html">
+                <a href="sub.php">
                     <div class="more"><!--<i class="far fa-plus-square"></i>--> More</div>
                 </a>
-                <li><a href="view.html"><img src="images/clothing1.jpg" alt="clothing1">
+                <li><a href="view.php"><img src="images/clothing1.jpg" alt="clothing1">
                         <div class="product-dc">
                             <p>Coat</p>
                             <p>170,000</p>
                         </div>
                     </a></li>
-                <li><a href="view.html"><img src="images/clothing2.jpg" alt="clothing2">
+                <li><a href="view.php"><img src="images/clothing2.jpg" alt="clothing2">
                         <div class="product-dc">
                             <p>Dress</p>
                             <p>130,000</p>
                         </div>
                     </a></li>
-                <li><a href="view.html"><img src="images/clothing3.jpg" alt="clothing3">
+                <li><a href="view.php"><img src="images/clothing3.jpg" alt="clothing3">
                         <div class="product-dc">
                             <p>Ops</p>
                             <p>110,000</p>
                         </div>
                     </a></li>
-                <li><a href="view.html"><img src="images/clothing4.jpg" alt="clothing4">
+                <li><a href="view.php"><img src="images/clothing4.jpg" alt="clothing4">
                         <div class="product-dc">
                             <p>Blouse</p>
                             <p>90,000</p>
@@ -165,28 +139,28 @@ foreach($_POST as $key =>$value){
             </ul>
             <ul class="handbag">
                 <h2>Handbags</h2>
-                <a href="sub.html">
+                <a href="sub.php">
                     <div class="more"><!--<i class="far fa-plus-square"></i>--> More</div>
                 </a>
-                <li><a href="view.html"><img src="images/bag1.jpg" alt="bag1">
+                <li><a href="view.php"><img src="images/bag1.jpg" alt="bag1">
                         <div class="product-dc">
                             <p>Clutch</p>
                             <p>180,000</p>
                         </div>
                     </a></li>
-                <li><a href="view.html"><img src="images/bag2.jpg" alt="bag2">
+                <li><a href="view.php"><img src="images/bag2.jpg" alt="bag2">
                         <div class="product-dc">
                             <p>Satchel</p>
                             <p>220,000</p>
                         </div>
                     </a></li>
-                <li><a href="view.html"><img src="images/bag3.jpg" alt="bag3">
+                <li><a href="view.php"><img src="images/bag3.jpg" alt="bag3">
                         <div class="product-dc">
                             <p>Tote</p>
                             <p>240,000</p>
                         </div>
                     </a></li>
-                <li><a href="view.html"><img src="images/bag4.jpg" alt="bag4">
+                <li><a href="view.php"><img src="images/bag4.jpg" alt="bag4">
                         <div class="product-dc">
                             <p>Shoulder</p>
                             <p>350,000</p>
@@ -195,28 +169,28 @@ foreach($_POST as $key =>$value){
             </ul>
             <ul class="shoes">
                 <h2>Shoes</h2>
-                <a href="sub.html">
+                <a href="sub.php">
                     <div class="more"><!--<i class="far fa-plus-square"></i>--> More</div>
                 </a>
-                <li><a href="view.html"><img src="images/shoes1.jpg" alt="shoes1">
+                <li><a href="view.php"><img src="images/shoes1.jpg" alt="shoes1">
                         <div class="product-dc">
                             <p>Flat</p>
                             <p>140,000</p>
                         </div>
                     </a></li>
-                <li><a href="view.html"><img src="images/shoes2.jpg" alt="shoes2">
+                <li><a href="view.php"><img src="images/shoes2.jpg" alt="shoes2">
                         <div class="product-dc">
                             <p>Sneakers</p>
                             <p>190,000</p>
                         </div>
                     </a></li>
-                <li><a href="view.html"><img src="images/shoes3.jpg" alt="shoes3">
+                <li><a href="view.php"><img src="images/shoes3.jpg" alt="shoes3">
                         <div class="product-dc">
                             <p>Ankle Bootie</p>
                             <p>250,000</p>
                         </div>
                     </a></li>
-                <li><a href="view.html"><img src="images/shoes4.jpg" alt="shoes4">
+                <li><a href="view.php"><img src="images/shoes4.jpg" alt="shoes4">
                         <div class="product-dc">
                             <p>Sneakers</p>
                             <p>160,000</p>
@@ -225,28 +199,28 @@ foreach($_POST as $key =>$value){
             </ul>
             <ul class="accessories">
                 <h2>Accessories</h2>
-                <a href="sub.html">
+                <a href="sub.php">
                     <div class="more"><!--<i class="far fa-plus-square"></i>--> More</div>
                 </a>
-                <li><a href="view.html"><img src="images/accessories1.jpg" alt="accessories1">
+                <li><a href="view.php"><img src="images/accessories1.jpg" alt="accessories1">
                         <div class="product-dc">
                             <p>Earring</p>
                             <p>100,000</p>
                         </div>
                     </a></li>
-                <li><a href="view.html"><img src="images/accessories2.jpg" alt="accessories2">
+                <li><a href="view.php"><img src="images/accessories2.jpg" alt="accessories2">
                         <div class="product-dc">
                             <p>Earring</p>
                             <p>130,000</p>
                         </div>
                     </a></li>
-                <li><a href="view.html"><img src="images/accessories3.jpg" alt="accessories3">
+                <li><a href="view.php"><img src="images/accessories3.jpg" alt="accessories3">
                         <div class="product-dc">
                             <p>Necklace</p>
                             <p>280,000</p>
                         </div>
                     </a></li>
-                <li><a href="view.html"><img src="images/accessories4.jpg" alt="accessories4">
+                <li><a href="view.php"><img src="images/accessories4.jpg" alt="accessories4">
                         <div class="product-dc">
                             <p>Necklace</p>
                             <p>230,000</p>

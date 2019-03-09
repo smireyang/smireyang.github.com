@@ -69,7 +69,7 @@ header.sticky .searchbar{margin-top: 1.6em;}
 .sub-menu ul {float: left;}
 .sub-menu ul li {padding-top: 0.5em; width: 10%;}
 .sub-menu ul li a{font-weight: bold;}
-.sub-menu ul li a:hover{color:#000; background: #eee;}
+.sub-menu ul li a:hover{color:#0c2340; border-bottom: 1px solid #0c2340;}
 .sub1 {padding-left: 6.6em;}
 .sub2 {padding-left: 5.8em;}
 .sub3 {padding-left: 5.7em;}
